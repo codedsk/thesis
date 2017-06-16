@@ -1,0 +1,161 @@
+%
+%  introduction.tex  2012-01-18  Mark Senn  http://engineering.purdue.edu/~mark
+%
+%  This is the introduction chapter for a simple, example thesis.
+%
+
+% A. overview of the hub
+%   1. what makes something a hub
+%   2. how used and developed
+% B. problems
+%   1. bugs - related this back to the developement process
+%   2. current tools and why they don't solve the problem
+% C. Overview of the solution (hubcheck)
+% D. Effectiveness of the solution
+% E. Overview of the rest of the thesis
+
+
+\chapter{INTRODUCTION}
+\label{chap:introduction}
+
+%\section {What is a hub?}
+%\label{sec:what_is_a_hub}
+
+% FIXME:
+% tell what a hub component is, hubs are made up of components. which
+% components are included in the standard set?
+
+% FIXME:
+% what is a hub at a high level?
+% hubs like everything else have bugs, hard to find, repeat offenders, good for
+% automatic testing, in the rest of the section we will talk about types of
+% hubs being targeted, previous attempts to do testing, what out proposed
+% solution will be.
+
+% FIXME:
+% add wording saying what a hub is, and that we cover the space. what makes
+% other web portals not hubs
+
+% outline
+% what is a hub
+% * open source platform
+% * hubs like everything else have bugs, hard to find, repeat offenders
+% * good for automatic testing
+% * platform with pluggable components
+% * different user rolls
+% * three features that separate a hub from other websites
+
+HUBzero is an open source software platform for building websites, or hubs,
+that support collaborative research, science, and education.  Like all
+software, the platform has bugs being introduced and fixed with every release.
+Bugs in hubs can be hard to find, and once fixed can be reintroduced in a later
+release, which make them good candidates for automated testing. The HUBzero
+platform is a dual environment system consisting of a website that uses
+pluggable components to provide services to users, and middleware that provides
+access to Linux based containers where simulation tools are developed and run.
+Due to its complexity, testing on the hub introduces unique challenges
+involving the interactions between the web server and middleware that cannot be
+addressed by currently available testing software.  The HUBcheck library was
+created to address these challenges and provide hub developers with a single
+toolkit for performing end user testing on hubs managed by the HUBzero Team at
+Purdue University.
+
+\section{Origins of Hub Testing}
+\label{sec:problems_with_the_hub}
+
+In 2005, the HUBzero Team supported their first hub, nanoHUB.org. In
+2007, the number of hubs in production had risen to four, and by 2012, the team
+was supporting twenty five hubs. The release of the open source version allowed
+others to begin launching self-supported hubs.  Each deployed hub started from
+a single core version of the software and quickly bloomed into its own system
+with the standard set of hub components and slightly different configurations
+and content.
+
+Despite the best intentions of the HUBzero Team, hub software was, and
+still is, being released with bugs. The same economies of scale that allow the
+group to rapidly deploy quality software work against the group when combating
+erroneous software. A single bug that is discovered on one hub website is
+usually also on numerous other hub websites.  In the past, different upgrade
+schedules and a lack of upgrade documentation made it hard to tell which hubs
+had one of the many bugs reported to the team. Additionally, the lack of a test
+suite made it difficult to find bugs before the software was released.
+
+%Different upgrade
+%schedules of the hubs and a lack of upgrade documentation make it hard to tell
+%which hubs still have one of the known bugs. The lack of a test suite for
+%components makes it difficult to find bugs before and after the software is
+%released.
+
+Before HUBcheck, the testing of hub components was performed by hand, making it
+a time consuming and error prone process.  The manual testing promoted
+variation in tests performed. Due to its repetitive nature, each iteration of
+testing could be performed a different way, or not performed if forgotten.  The
+escalating commitment needed to setup and perform tests encouraged spot
+checking of bug fixes instead of a broad retesting of components.
+
+
+\section{A Hub Specific Testing Solution}
+\label{sec:the_hubcheck_solution}
+
+The hub is a controlled environment where the developers understand how the
+components are supposed to work. HUBcheck, a set of hub automation libraries,
+allows developers to take advantage of this knowledge and perform targeted end
+user tests for hub components that the industry standard tools do not support.
+HUBcheck provides a collection of tools which can be used to help automate the
+testing of how users interact with hub components that would otherwise be
+performed by hand.  When compared to testing by hand, HUBcheck reduces testing
+time, increases test coverage, and provides a reliable way to reproduce errors.
+
+The HUBcheck libraries focus on two types of automation, hub access through a
+secure shell (SSH) and hub access through a web browser. Building on top of
+Python's Paramiko libraries and using ideas from Tcl's Expect, HUBcheck
+provides functions to easily automate access to different environments through
+SSH. This enables developers to test lower level system setup and
+configuration, for example, within a tool session container. Similarly,
+HUBcheck uses the Selenium library to automate user interactions with the hub
+website.  HUBcheck libraries provide abstractions of hub components, that can
+be used to write maintainable automation scripts. When combined, these two
+automation models can be used to verify that a hub is running as it was
+intended.  By using HUBcheck to write test cases for hub components, a hub can
+be verified in under a day. The decrease in testing time and increase in tested
+components encourages the adoption of automated testing earlier in the
+development cycle, where errors cost less to fix.
+
+This thesis describes the inner workings of HUBcheck and how it is utilized by
+the HUBzero Team to track and reduce the number of software defects in the
+HUBzero Platform. The thesis starts by reviewing related work in
+\Cref{chap:related_work} and providing background information about how the hub
+works in \Cref{chap:hubzero}.  \Cref{chap:problem} discusses the types of
+problems commonly seen on the hub and the reasons they can be hard to test.  In
+\Cref{chap:external_libraries}, we look into the external libraries that
+HUBcheck depends on to enable developers to automate processes.
+\Cref{chap:hubcheck} dives into HUBcheck's modules, explaining how it builds
+upon tools like Selenium WebDriver and Paramiko to provide a library for hub
+automation and testing. \Cref{chap:page_objects} continues the HUBcheck
+discussion by introducing best practices for building maintainable test cases.
+Lastly, empirical data from using HUBcheck on hubs managed by the HUBzero Team
+is presented in \Cref{chap:solution} and future work for the HUBcheck project
+is laid out in \Cref{chap:future}.
+
+
+% the proof:
+%
+%
+% 3 common examples of regressions
+% -------------------------------
+% 1. Contribtool - installtool with incorrect permissions
+% 2. Known Bad Links - discovered in 2011 vm, some still around in 2012 vm
+% 3. packages inside workspace
+
+%the connections between compilers and testing.
+%compilers parse code, allow you to identify things that look wierd, could be bugs.
+%
+%compilers instrument code, testing must also instrument code. in web
+%application testing, code instrumentation is being able to identify page
+%elements uniquely and reliably by some identifier.
+
+% http://www.youtube.com/watch?v=Wzj8UXdcElo&feature=plcp
+% dependency injection
+% must treat tests as code.
+% framework must have unit tests.
+

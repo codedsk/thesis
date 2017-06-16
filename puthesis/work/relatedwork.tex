@@ -1,0 +1,105 @@
+%
+%  relatedwork.tex  2015-02-20  Derrick Kearney
+%
+%  Describe what has been done in the past.
+%  Tell how these solutions are incomplete for our problem.
+%
+
+\chapter{RELATED WORK}
+\label{chap:related_work}
+
+Automated tools exist to aid in the testing of web applications and cover
+popular testing topics including performance, security, functionality,
+usability, and user interfaces.  One popular class of automated web testing
+tools are \textit{web crawlers}, such as Crawljax \cite{crawljax:tweb12} and
+IBM Security AppScan \cite{Appscan:2013:Online}. Web crawlers traverse a web
+application, performing tests based on the existence of interactive widgets
+(text boxes, links, and buttons) on web pages.
+
+%For some tools in this class, a side effect of web crawling is the creation of
+%a graph with nodes that represent the states of the web application and edges
+%that represent the actions performed to get to the next state. The paths of
+%the web application graph can be analyzed to generate additional tests to be
+%performed.
+
+Using a web crawler can require very little coordination from a developer.  The
+crawler's semi-directed exploration of the web application allows it to treat
+the application like a black box when checking for bugs. Web crawlers navigate
+to reachable web pages, review the available widgets on the web page, attempt
+actions, and document the results. This makes them ideal for building site
+maps, testing navigation, checking for bad links, and performing security scans
+across generic web pages. The use of a web crawler is not without cost.  Web
+crawlers can take a long time to run because their goal is to exhaust every
+path through a graph that represents a web application under test.  The upside
+is that they have the opportunity to run a large number of tests on the web
+application, in an automated fashion, with little initial investment of time
+from the developer.
+
+For web crawlers, knowledge of how the web application works and its limits are
+usually discovered at runtime, which can require a time consuming, exhaustive
+search of the problem space. Even after the web application has been
+``learned,'' there is no authority to determine if the learned behavior is the
+correct behavior.  For example, an important part of building a successful hub
+is allowing content developers to create and deploy their own resources.  The
+first step of contributing a resource to the hub is to fill out a web form
+describing the content that is being contributed. The form generally contains
+text boxes and drop down lists, some of which are required or have special
+restrictions on accepted values. A web crawler would be able to interact with
+the widgets in the web form, test navigation of links on the page, and test the
+security of inputting values into the text boxes in the form.  Without
+additional knowledge provided by the developer, the web crawler would have a
+hard time determining if a widget was supposed to be required or optional, or
+confirming that each widget's input validation was working properly.
+%
+%Some web crawlers accumulate history, giving them an advantage during repeated
+%runs of the crawler.  Web crawlers that operate without memory need to relearn
+%the web application with each run of the crawler, which can be timely when
+%testing specific features.
+%
+% need to cite which web crawlers acculate history that can be fed back into
+% the crawler. maybe crawljax probably some of the non testing related
+% crawlers.
+%
+Exploring every path through the web application graph is good for whole system
+testing, but when it comes to targeted testing of a specific set of actions,
+another class of tools is available.
+
+% hardly any good references for WEBKING on google
+% http://www2.sys-con.com/itsg/virtualcd/java/archives/0512/Barbash/index.html
+% accessed 20150220
+
+% Sahi links
+% http://www.ibm.com/developerworks/library/wa-sahi/
+% http://sahipro.com/
+% http://sourceforge.net/projects/sahi/
+
+This second class of automated web testing tools are \textit{test recorders},
+including Selenium WebDriver \cite{Selenium:AOSA:Online}, Webking, and Sahi
+\cite{Sahi:2015:Online}. Test recorders have explicit web application
+navigation based on actions previously recorded by the developer. Recording the
+actions for these tools to perform is a time consuming, manual process compared
+to the more automatic web crawlers, but can produce specific, targeted tests.
+In the case of Selenium WebDriver, these recordings can be programmed into a
+script and coordinated with actions performed by other remotely controlled
+applications such as a terminal shell.
+
+Using a test recorder based tool, hub developers could record or program the
+steps of filling in the registration form of the resource contribution process,
+described in the previous example. Widget input validation can be exercised by
+running the automated script with different, developer specified, input values.
+By allowing the developer to choose the input values, knowledge of the widget's
+restrictions are embedded within the collection of tests. While web crawler
+based tools would need to discover a widget's restrictions, test recorder based
+tools have the restrictions defined by the hub developer.
+
+Web crawler and test recorder based tools are designed for
+testing web pages. On the hub, content developers and users interact with web
+pages, but they also interact with a component that is not a web page, called a
+tool session container. Tool session containers are Debian Linux based OpenVZ
+containers that allow content developers to build and deploy simulation tools
+on the hub. Testing within the tool session container requires accessing it
+through a secure shell (SSH) connection. Traditional web crawler and
+test recorder based tools are not designed for this, and, on their
+own, cannot be used for this purpose.
+
+

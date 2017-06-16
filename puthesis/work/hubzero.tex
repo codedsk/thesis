@@ -1,0 +1,454 @@
+%
+%  hubzero.tex  2012-01-18  Mark Senn  http://engineering.purdue.edu/~mark
+%
+%  Describe what hubzero is and the pieces that make it up.
+%
+
+
+% Goal: build websites for scientific collaboration.
+% Research
+% Education
+% Collaboration
+%
+% ------------------------------------------------
+%
+% Notes from hubzero video:
+% https://hubzero.org/resources/842
+% Searching for data
+% Exploring data
+% Uploading data, sharing files
+% Computing in clusters
+% Visualizing results
+% Analyzing data
+% verifying results
+% publishing resources, powered by community
+% reviewing
+% questioning
+% Discussions, Collaborating with others
+% Science is powered by hubzero
+% over 40 hubs serving over 800,000 people
+% nanohub.org is the oldest and largest hub with 557,663 visitors and 269,461 users (cite https://nanohub.org/usage on 20130908)
+% neeshub.org is the second most visited hub with 256,334 visitors and 73,136 users (cite https://nees.org/usage on 20130908)
+% research on hubs covers a variety of topics including pharmaceuticals, volcanos, cancer research, bio energy, education, earthquake engineering, and some utility websites like PURR which focuses on data management.
+% each hub is a community
+% Features:
+%   Projects - collaboration space with wikis and file repository
+%   Groups - not sure the difference between projects and groups, but groups can have projects.
+%   Simulation Tools - run in workspaces, perform simulations with scientific software, have the ability to use computational resources (condor, open science grid, other clusters?) from around the country (world?), visualize simulation results,
+%   Courses - nanohub-u is an initiative from nanohub.org which allows users to sign up for courses, taught online using recorded lectures, simulation tools discussion forums and exams. continuing education credits are available upon completion. the courses module expands on the nanohub-u courses idea, allowing teachers to upload their own resources and organize the online course themselves. Students also have a role, where they can track their progress throug
+%
+% ------------------------------------------------
+%
+% Notes from
+% HUBzero: A Platform for Dissemination and Collaboration in Computational Science and Engineering
+% https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5432299
+% hubs allow users to run simulation tools with graphical user interfaces directly from their web browser.
+% Tools run in lightweight OpenVZ containers maintained on execution host in close proximity to the web server, visualization servers, and with connections to grid computing infrastructure.
+% The containers run an X11 server, which is projected back to the user's desktop through VNC (virtual network computing)
+% Tool users have disk space on a file server. The file server enforces unix quotas, access control, and permissions.
+% running tools in a container provides tool developers with a consistent development environment in which to build simulators
+% it also provides hub mantainers an added level of control and security over how tools are run. within hubzero tool session containers, inbound and outbound connections are regulated using firewalls. firewall profiles are tuned for classes of users. this is controlled by the middleware.
+% running tools in a controlled environment promotes their authorization to connect to national grid computing resources such as open science grid, teragrid, and diagrid.
+% the process for publishing a tool resource is similar to the process of publishing other recources like reports and data.
+% need to add something about linking tools together using pegasus workflows and submit, since we can test that within a workspace.
+%
+%
+%\subsection{User Community}
+%\subsection{Website}
+%\subsubsection{Resources}
+%\subsubsection{Groups}
+%\subsubsection{Discussions}
+%\subsubsection{Members}
+%\subsubsection{Support Tickets}
+%\subsubsection{Events}
+%\subsection{Simulation Tools}
+%\input{workspace}
+
+
+%\setenumerate[1]{label=\Roman*.}
+%\setenumerate[2]{label=\Alph*.}
+%\setenumerate[3]{label=\roman*.}
+%\setenumerate[4]{label=\alph*.}
+%\begin{outline}[enumerate]
+%
+%\1 What is a hub
+%  \2 Hubs power science in three ways
+%    \3 Research
+%    \3 Education
+%    \3 Collaboration
+%  \2 Hubs revolve around communities
+%    \3 Over 20 hubs hosted at Purdue University
+%    \3 List metrics on the number of users on top hubs
+%  \2 Hubs are made up of components
+%    \3 Components are plugins for the hub that provide a specific feature.
+%\1 hub Components supporting Research
+%  \2 Simulation Tools
+%    \3 Hubs support running simulation tools with graphical user interfaces.
+%    \3 Users can upload or develop their own software in the tool session container.
+%    \3 Tool session containers are hosted on the hub, with an X11 server that is
+%       projected to the user's desktop through a VNC connection.
+%    \3 Tool session containers have access to visualization servers
+%       and national grid computing resources.
+%    \3 Talk about how simulation tools are used to support research.
+%\1 hub Components supporting Education
+%  \2 Courses
+%    \3 The courses module allows faculty to build and conduct an online class.
+%       Students signed up for a course can view lectures, uploaded course material,
+%       take exams, and view their course progress.
+%    \3 Published resources from the hub can also be utilized inside of the course.
+%    \3 Courses can reference simulation tools with setup examples for students to
+%       run using "parameter passing" from the website into the tool session container.
+%  \2 Resources
+%    \3 Hubs allow users to upload different types of resources and share them
+%       with the community.
+%    \3 Users are able to upload animations, presentations, publications,
+%       teaching materials, and other downloadable content.
+%\1 hub Components supporting Collaboration
+%  \2 Groups
+%    \3 Share content and conversation with a group of hub users.
+%    \3 Includes discussion forms, wiki pages, projects, published resources.
+%    \3 Privacy settings allow group managers to control access to group resources.
+%  \2 Projects
+%    \3 Collaboration space with wikis and file repository.
+%    \3 Built to help manage data needed for writing a proposal or research paper.
+%  \2 Databases
+%    \3 Allows hub users to quickly upload data from a speadsheet into a database.
+%    \3 Users can create views, plot, and combine data with maps.
+%    \3 Data can be shared with simulation tools for further processing.
+%
+%
+%\end{outline}
+
+
+\chapter{HUBZERO}
+\label{chap:hubzero}
+
+%\section {What is a hub?}
+%\label{sec:what_is_a_hub}
+
+\section{The HUBzero Platform}
+\label{sec:the_hubzero_platform}
+
+%Through out the world, science is performed and discoveries are made.
+%Science is the search for understanding, of observed patterns, in natural
+%events.
+
+% cite http://www.gly.uga.edu/railsback/1122science2.html#SCIKNOWLEDGE
+% cite http://www.gly.uga.edu/railsback/1122sciencedefns.html
+
+The HUBzero Platform \cite{Hubzero:2010:cise} is an open source software
+platform designed to meet the needs of researchers and educators through the
+use of dynamic web sites and interactive simulation tools. Websites based on
+the HUBzero software stack, also known as hubs, power science by supporting
+research, education, and collaboration.
+
+%\section {Hub Users}
+%\label{sec:hub_users}
+
+Three groups of users interact with the hub environment. Hub developers build
+the hub by writing website components, creating the middleware and application
+toolkits, and monitoring content creation channels. Content developers produce
+the presentations, articles, software simulators, and other material that
+attracts people to the hub. While hub users are the consumers of content
+available on the hub, they are often also content developers.
+
+There are three features that separate a hub from other websites available on
+the internet:
+
+\begin{enumerate}
+\item Simulation Tools - running software simulations from a web browser
+\item Content Sharing - allowing users to upload and download content from the community
+\item Support for Collaboration - helping people work together and learn from
+      each other
+\end{enumerate}
+
+\subsection{Simulation Tools}
+\label{ssec:simulation_tools}
+
+Hubs allow content developers to build and deploy software applications as
+tools with graphical user interfaces, available for hub users to run inside of
+a web browser.  The HUBzero platform provides the content developers with a
+virtual Linux environment, called a tool session container, where they can
+develop simulation tools that support their science.  Inside the tool session
+container, developers are able to access high performance computing resources
+and incorporate output from visualization servers in their tool.  Once created,
+these simulation tools can be published as resources on the hub, where hub
+users can launch and interact with them through a web browser.  Publishing
+simulation tools on the hub removes the burden on users of downloading and
+installing the software on their own computer, fighting with compiler errors,
+and acquiring access to restricted resources. Simulation tools available on the
+hub provide a seamless, end-to-end experience for users.
+
+\subsection{Sharing Content}
+\label{ssec:sharing_content}
+
+Hubs allow content developers to upload datasets, presentations, teaching
+materials, publications, simulation tools (as mentioned in
+section~\ref{ssec:simulation_tools}), and other types of materials. Once
+published on the hub, these materials can be shared with the world. Hubs are
+community driven and the ability for users to influence and shape the
+community is a key feature of the hub.
+
+\subsection{Support for Collaboration}
+\label{ssec:support_for_collaboration}
+
+Hubs allow users to work together and form communities. Users can create groups
+within the hub to cultivate special interests, or create projects with document
+repositories used to organize and track changes in data. Hubs support other
+methods to collaborate with the community through the ``Questions and Answers''
+forums, where users can ask and respond to questions posted by other members,
+and through wishlists, where users can suggest changes to help improve the hub.
+
+A hub revolves around a scientific community, just as science itself does. The
+HUBzero Team hosts over 20 hubs, supporting scientists researching
+nanotechnology, earthquake engineering, healthcare systems, pharmaceutical
+manufacturing, cancer, volcanoes, biomass energy, and more. Together, these
+hubs comprise over 400,000 users and over a million visitors per year.
+\Cref{tab:topHubsByUser} provides a breakdown of users and visitors for the
+largest hubs supported by the HUBzero Team. User counts include registered
+accounts, unregistered users with a unique IP address or hostname that remained
+active while visiting the site for at least 15 minutes, and uniquely
+identifiable unregistered users who download a resource from the website.
+Visitors are identified by a unique IP address or hostname.
+
+% create a table, listing metrics on the number of users on top hubs.
+% data recorded on 20131002
+% data represents last 12 months
+% users 
+% visitors identified by a unique IP address / hostname
+%
+%   hub               users           visitors
+%-----------------------------------------------
+%
+%   nanohub.org       269,461         557,663   https://nanohub.org/usage
+%
+%   nees.org          78,177          265,075   https://nees.org/usage
+%
+%   pharmahub.org     24,213          35,198    https://pharmahub.org/usage
+%
+%   vhub.org          13,841          38,600    https://vhub.org/usage
+%
+%   stemedhub.org     5,104           15,943    https://stemedhub.org/usage
+%
+%   ccehub.org        4,346           18,431    https://ccehub.org/usage
+%
+%   habricentral.org  3,760           48,040    https://habricentral.org/usage
+%
+%   molecularhub.org  2,675           15,995    https://molecularhub.org/usage
+%
+%   purr.purdue.edu   2,636           15,281    https://purr.purdue.edu/usage
+%
+%   iemhub.org        2,421           12,821    https://iemhub.org/usage
+%
+%   c3bio.org         2,360           15,537    https://c3bio.org/usage
+%
+%   cleerhub.org      1,257           7,988     https://cleerhub.org/usage
+%
+%   drinet.hubzero.org 1,082          10,123    https://drinet.hubzero.org/usage
+%
+%   iashub.org        1,062           13,316    https://iashub.org/usage
+%
+%   diagrid.org       789             8,238     https://diagrid.org/usage
+%
+%   memshub.org       781             5,851     https://memshub.org/usage
+%
+%   geoshareproject.org 600           6,630     https://geoshareproject.org/usage
+%
+%   catalyzecare.org  460             8,050     https://catalyzecare.org/usage
+%
+%
+%
+
+\begin{table}[t]
+  \centering
+  \caption{List of 2013's Largest hubs sorted by number of users}
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    Hub                                                          & \# Users  & \# Visitors \\ \hline
+    nanohub.org \cite{nanohub_usage:2013:Online}                 & 269,461   & 557,663 \\ \hline
+    nees.org \cite{nees_usage:2013:Online}                       &  78,177   & 265,075 \\ \hline
+    pharmahub.org \cite{pharmahub_usage:2013:Online}             &  24,213   &  35,198 \\ \hline
+    vhub.org \cite{vhub_usage:2013:Online}                       &  13,841   &  38,600 \\ \hline
+    stemedhub.org \cite{stemedhub_usage:2013:Online}             &   5,104   &  15,943 \\ \hline
+    ccehub.org \cite{ccehub_usage:2013:Online}                   &   4,346   &  18,431 \\ \hline
+    habricentral.org \cite{habricentral_usage:2013:Online}       &   3,760   &  48,040 \\ \hline
+    molecularhub.org \cite{molecularhub_usage:2013:Online}       &   2,675   &  15,995 \\ \hline
+    purr.purdue.edu \cite{purr_usage:2013:Online}                &   2,636   &  15,281 \\ \hline
+    iemhub.org \cite{iemhub_usage:2013:Online}                   &   2,421   &  12,821 \\ \hline
+    c3bio.org \cite{c3bio_usage:2013:Online}                     &   2,360   &  15,537 \\ \hline
+    cleerhub.org \cite{cleerhub_usage:2013:Online}               &   1,257   &   7,988 \\ \hline
+    drinet.hubzero.org \cite{drinet_usage:2013:Online}           &   1,082   &  10,123 \\ \hline
+    iashub.org \cite{iashub_usage:2013:Online}                   &   1,062   &  13,316 \\ \hline
+    diagrid.org \cite{diagrid_usage:2013:Online}                 &     789   &   8,238 \\ \hline
+    memshub.org  \cite{memshub_usage:2013:Online}                &     781   &   5,851 \\ \hline
+    geoshareproject.org \cite{geoshareproject_usage:2013:Online} &     600   &   6,630 \\ \hline
+    catalyzecare.org \cite{catalyzecare_usage:2013:Online}       &     460   &   8,050 \\ \hline
+  \end{tabular}
+  \label{tab:topHubsByUser}
+\end{table}
+
+
+\section{Hub Components}
+\label{sec:hub_components}
+
+The HUBzero platform uses a plugin based architecture. Customization and
+features are added through plugin extensions named \textit{Components}. Out of
+the box, a hub comes with components that are designed to support research,
+education and collaboration. \Cref{tab:componentsPowerScience} shows a few
+of the more popular components and how they contribute to the hub powering
+Science.
+
+% create a table, listing the major components and what they support.
+%
+%   component           research      education     collaboration     other
+% ---------------------------------------------------------------------------
+%
+% simulation tools         X              X               X
+%
+% courses                                 X
+%
+% resources                X              X
+%
+% groups                   X                              X
+%
+% projects                 X                              X
+%
+% databases                X                              X
+%
+% support tickets                                                       X
+%
+%
+
+\begin{table}[t]
+  \centering
+  \caption{Hub components are built to power science}
+  \begin{tabular}{ | c | c | c | c | }
+    \hline
+    Component               & Research  & Education   & Collaboration  \\ \hline % & Other \\ \hline
+    Simulation Tools        &    X      &     X       &       X        \\ \hline % &       \\ \hline
+    Courses                 &           &     X       &                \\ \hline % &       \\ \hline
+    Resources               &    X      &     X       &                \\ \hline % &       \\ \hline
+    Groups                  &    X      &             &       X        \\ \hline % &       \\ \hline
+    Projects                &    X      &             &       X        \\ \hline % &       \\ \hline
+    Databases               &    X      &             &       X        \\ \hline % &       \\ \hline
+%    Support Tickets         &           &             &                \\ \hline % &   X   \\ \hline
+%    Wishes                  &           &             &                \\ \hline % &   X   \\ \hline
+    Questions and Answers   &           &     X       &                \\ \hline % &       \\ \hline
+  \end{tabular}
+  \label{tab:componentsPowerScience}
+\end{table}
+
+
+%\section{Hub Components Supporting Research}
+%\section{Hub Components Supporting Education}
+%\section{Hub Components Supporting Collaboration}
+
+\subsection{Simulation Tools}
+\label{ssec:hub_components_simulation_tools}
+
+The HUBzero platform supports the publishing of software simulation tools with
+graphical user interfaces.  Hubs follow a tool contribution process which
+outlines how users can develop, install and publish their own software. This
+process allows scientists and researchers to disseminate their software on the
+hub.  Simulation tools run in an OpenVZ \cite{OpenVZ:2013:Online} container
+called a tool session container.  Tool session containers are hosted on the
+hub, and have an X11 server that is projected to the user's desktop through a
+VNC \cite{VNC:2013:Online} connection. On hubs hosted by the HUBzero Team, tool
+session containers have access to visualization servers and national grid
+computing resources.
+
+% cite mmc and kennel paper regarding forwarding the VNC connection.
+
+% show picture of a visualization from manufacturinghub or nanohub tool
+
+% show pictures of the diagrid, open science grid, teragrid logos
+
+Tool session containers on hosted hubs have access to visualizations servers
+that can handle VTK data, PYMOL data, and the home grown nanoVIS data format.
+Users working in these tool session containers can also submit jobs to various
+grid computing resources including Diagrid \cite{Diagrid2008}, Open Science
+Grid \cite{Pordes2008} and XSEDE \cite{XSEDE2008}.  Access to these premium
+computing resources allows researchers to build simulation tools for users who
+may not have access to the powerful machines needed to run parallel cluster
+jobs or visually represent large datasets that are produced as results.
+
+
+\subsection{Resources}
+\label{ssec:hub_components_resources}
+
+The Resources component provides hub content developers with a way to upload
+their own online presentations, publications, animations, and other
+downloadable content.  Contributing a resource is similar to contributing a
+simulation tool. The content developer provides a title, description, citation,
+and author information for the resource being contributed. After being
+reviewed, the resource is published on the hub. These materials, generated by
+the hub's community, are an important aspect of the hub. When content
+developers upload resources, it promotes the education of users and helps
+spread the work and ideas of community members.
+
+
+\subsection{Courses}
+\label{ssec:hub_components_courses}
+
+The Courses component allows educators to upload various course material
+including lectures, tests, quizzes, homework and notes, and organize them in a
+timeline format for dissemination as a course. Courses can also pull in
+published hub resources and simulations tools. Each course can support multiple
+offerings, or versions of the course, and each offering can support multiple
+sections running on different schedules. The Courses component has an interface
+for hub users where they can track their progress, view lectures, take
+quizzes, and download homework.  The Courses component directly supports the
+educational goals of the hub.
+
+% cite the emily kayser's hubbub presentation:
+% http://hubzero.org/resources/1074
+
+
+\subsection{Groups}
+\label{ssec:hub_components_groups}
+
+Hub users can form specialized communities on the hub by creating a group using
+the Groups component. Membership to user created groups can be opened to the
+public, restricted to certain people, or completely private. Within a group,
+members can upload resources, share content, start conversations and host
+projects.  Groups promote collaboration and help teams of people share
+research.
+
+\subsection{Projects}
+\label{ssec:hub_components_projects}
+
+The Projects component on the hub makes collaborating with other hub users
+easy. Similar to the Groups component, Projects lets users manage a team of users
+and collaborate. Projects also provide users with management tools like to-do
+lists, notes, a Git based file repository, and connections to cloud resources
+such as Google Drive and DropBox. Projects were created to help ease the
+process of collaborating on funding proposals, writing research papers, and
+managing data.
+
+\subsection{Databases}
+\label{ssec:hub_components_databases}
+
+The Databases component allows hub users to quickly populate and search a
+database based on data from a spreadsheet or file. Using the Databases
+component, users can create views, plot, and combine data with maps. Data from
+databases can also be shared with simulation tools for further processing.
+
+%\subsection{Support Tickets}
+%\label{ssec:hub_components_support_tickets}
+%
+%
+%\subsection{Wishlist}
+%\label{ssec:hub_components_wishlist}
+%
+%The Wishlist component allows users to submit wishes about how to improve the hub
+
+
+\subsection{Questions and Answers}
+\label{ssec:hub_components_questions_answers}
+
+The Questions and Answers component promotes education and collaboration
+between hub users. Using this component, users can pose questions to the
+community and get responses. The best questions are voted up and the best
+answers can receive a reward of points that can be used on the hub website.
+
+

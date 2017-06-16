@@ -1,0 +1,123 @@
+%
+%  mydefs.tex  2007-03-19  Mark Senn  http://www.ecn.purdue.edu/~mark
+%
+%  Command definitions that can be used in all documents that have
+%      \input{mydefs}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup code single spacing caption for all floats
+
+\captionsetup{
+  font={stretch=1},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup special fonts/format (xformat,xf) for talking about:
+%   module
+%   classes
+%   class methods
+%   class attributes (data members)
+%   objects
+%   locator
+%   locator family
+%   inline code
+%   html link name
+%   parameter name
+%   uri scheme (http, https, mailto, webdav)
+%   program name
+
+\newcommand{\xfmodule}[1]{\texttt{#1}}
+\newcommand{\xfclass}[1]{\texttt{#1}}
+\newcommand{\xfmethod}[1]{\texttt{#1}}
+\newcommand{\xfattribute}[1]{\texttt{#1}}
+\newcommand{\xfobject}[1]{\texttt{#1}}
+\newcommand{\xflocator}[1]{\texttt{#1}}
+\newcommand{\xflocfam}[1]{\texttt{#1}}
+\newcommand{\xfinlinecode}[1]{\texttt{#1}}
+\newcommand{\xfhtmllink}[1]{\texttt{#1}}
+\newcommand{\xfparameter}[1]{\texttt{#1}}
+\newcommand{\xfurischeme}[1]{\texttt{#1}}
+\newcommand{\xfprogramname}[1]{\textbf{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup code listing captions
+%
+% i could never figure out why the colorbox seems so indented
+% so we just multiply our fboxsep by 7 and that accounts for
+% the indentation. had to adjust framexleftmargin and
+% framexrightmargin to match.
+%
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{
+  \colorbox[cmyk]{0.43, 0.35, 0.35, 0.01}{
+    \parbox{\dimexpr\textwidth-7\fboxsep\relax} {
+      #1#2#3
+    }
+  }
+}
+
+\captionsetup[lstlisting]{
+  format=listing,
+  labelfont=white,
+  textfont=white,
+  singlelinecheck=false,
+  margin=0pt,
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setting for code listings
+
+\lstset{ %
+  basicstyle=\scriptsize\ttfamily,    % the size of the fonts that are used for the code
+  breaklines=true,                    % sets automatic line breaking
+  captionpos=t,                       % sets the caption-position to bottom
+  belowcaptionskip=15px,              % add some space under the caption and above the code
+  frame=lines,                        % adds a frame around the code
+  numbers=left,                       % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                      % how far the line-numbers are from the code
+  numberstyle=\tiny\color{black},     % the style that is used for the line-numbers
+  showspaces=false,                   % show spaces everywhere adding particular underscores;
+  showstringspaces=false,             % underline spaces within strings only
+  showtabs=false,                     % show tabs within strings adding particular underscores
+  stepnumber=1,                       % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{black}\ttfamily\textbf, % string literal style
+  tabsize=2,                          % sets default tabsize to 2 spaces
+  xleftmargin=5ex,                    % space between page margin and line numbers/code/frames
+  framexleftmargin=13pt,               % left width of tob/bottom frame, starts at code, excludes line numbers
+  framexrightmargin=-3pt,              % right width of top/bottom frame, starts at textwidth?
+%  framexbottommargin=5pt,
+  extendedchars=true,
+  belowskip=15pt,
+}
+
+% load languages we will be using
+\lstloadlanguages{
+  XML,
+  HTML,
+  Python,
+}
+
+\lstnewenvironment{xcode}[1]
+  {
+    \noindent
+    \minipage{\linewidth}
+%    \lstset{tabsize=4, belowcaptionskip=1\baselineskip, #1}
+    \lstset{tabsize=4, #1}
+  }%
+  {
+    \endminipage
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,173 @@
+%
+%  abstract.tex  2013-07-01  Derrick Kearney
+%
+%  details regarding why hubcheck is novel
+%
+
+\documentclass[letterpaper]{article}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\begin{document}
+
+
+\section{Problem being addressed}
+
+\textbf{
+State the problem the contribution helps solve. A good problem is one that is
+very important; a non-specialist can understand the importance; and the problem
+can be stated in a single sentence.
+}
+
+The hub is a website made up of components. After the website's software is
+updated, testing of the components is performed by hand. Testing each component
+by hand is time consuming and error prone.  It promotes variations in testing
+where each iteration of testing can be performed a different way or not
+performed if forgotten. It also promotes spot checking of fixes to regressions
+instead of retesting everything because the time commitment to test everything
+again is so high.
+
+HUBcheck provides libraries which can be used to help automate the testing of
+users interact with hub components that would otherwise be performed by hand.
+When compared to testing by hand, HUBcheck reduces testing time, increases test
+coverage, and provides a reliable way to reproduce errors.
+
+\section{Metric to measure the size of the problem}
+
+\textbf{
+Say how one can measure the size of the problem. If a problem is quantifiable
+by a clear metric, it will be easier to write the paper and get it accepted.
+}
+
+%1) How long does it take to test a website by hand?
+%3 people testing, about 2 weeks
+%2) What components are covered? To what depth are components covered
+%groups, resources, 
+%3) fixes to regressions are spot tested, instead of retesting everything.
+
+The current method of testing takes on the order of weeks to perform. Test
+cases are not well documented, so the depth of coverage of the hub components
+is unknown. Additionally, the testing environment is constantly being updated
+with new software, which invalidates the test results as testing occurs.
+
+Things to measure:
+
+\begin{enumerate}
+\item Time needed to test hub in days or weeks
+\item Number of components covered
+\item Number of tests performed
+\item Number of regressions found
+\end{enumerate}
+
+
+\section{State of the art solutions to the problem}
+
+\textbf{
+Say to what extent related work has solved the problem. Mention the
+directly-related work that you'd like to get better than - the best
+alternative(s). Give quantitative answers, using the metric in \#2. If the
+best alternative is your own work, state this also. A paper get more easily
+accepted if the best alternative is not your own; papers for which the best
+alternative of all contributions is your own work have a harder time getting
+accepted. if not obvious from what you say, state the gap between the state
+of the art and the overall goal expressed in \#1 explicitly.
+}
+
+The current way to test how a user interacts with a hub is to generate test
+users, login to the hub as the test user and perform actions. This process is
+tedious because of the detail related to properly maintaining user accounts and
+consistently running tests. Testing a new release takes three people about two
+weeks. During the testing process many of the hub's components are tested,
+including Dashboard, Feedback, Jobs, Knowledge Base, Questions and Answers,
+Wishlists, and Tools.
+
+% http://hubzero.org/projects/testingproject/files/?action=download&subdir=QA+Testing%2FEmily%2FDashboard&file=DashboardIE-Registered-Emily.docx
+%Dashboard
+
+% http://hubzero.org/projects/testingproject/files/?action=download&subdir=QA+Testing%2FEmily%2FFeedback&file=FeedbackIE-Emily-RegisteredUser.docx
+%Feedback
+
+% http://hubzero.org/projects/testingproject/files/?action=download&subdir=QA+Testing%2FEmily%2FJobs+and+Resume&file=Jobs-Resume-IE-Registered-Emily.docx
+%Jobs
+
+% http://hubzero.org/projects/testingproject/files/?action=download&subdir=QA+Testing%2FEmily%2FKnowledge+Base&file=KnowledgeBaseIE-Registered-Emily.docx
+%Knowledge Base
+
+% http://hubzero.org/projects/testingproject/files/?action=download&subdir=QA+Testing%2FEmily%2FQA&file=QuestionsAnswersIE-Registered-Emily.docx
+%Questions and Answers
+
+% http://hubzero.org/projects/testingproject/files/?action=download&subdir=QA+Testing%2FEmily%2FWishlist&file=WishlistIE-registered-Emily.docx
+%Wishlists
+
+
+
+\section{Key idea to move beyond the state of the art}
+
+\textbf{
+% State the key idea underlying your contribution. This key idea is what
+% enabled your new technique to go beyond the state of the art. It should be
+% something non-obvious; realizing this key idea is what makes your technique
+% novel. The key idea should be readable in plain English ( in the
+% introduction). Avoid complex formula that would take the reader time to
+% understand. Mathematical expressions should go in the sections that describe
+% the realizations of the ideas.
+}
+
+The HUBcheck libraries help users automate tasks being performed through a
+secure shell (SSH) and through the web browser. Building on top of Tcl's Expect
+and Python's Paramiko libraries, HUBcheck provides functions to easily automate
+the access of different environments through SSH. Similarly, HUBcheck uses the
+Selenium library to automate user interactions with the hub website. HUBcheck
+libraries provide an abstraction of hub components, which can be used to write
+maintainable test cases.
+
+
+
+\section{Expected gain}
+
+\textbf{
+How much narrower do you expect the gap between state of the art and ultimate
+goal (\#1) to become, owing to your contribution? if you have finished your
+experiments, you may replace the estimate with the measured results. As many
+papers do or should start out before measurements have been collected, it
+also helps set the readers' expectations.
+}
+
+By using HUBcheck to write test cases for hub components, a hub can be
+validated in under a day. The decrease in testing time will encourage the
+adoption of automated testing into the development cycle and the quick
+identification and resolution of bugs and regressions that would otherwise make
+it to production environments.
+
+\section{State how you will demonstrate progress}
+
+\textbf{
+What are the experiments you will do (or have done) to demonstrate progress?
+Make sure the experiments result in a figure that uses the metric Column B on
+its y-axis. Often, such figures have a number of benchmarks on the x-axis and
+show data points for both the state of the art technique and your new
+technique. Additional results may show breakdowns of the overall
+"performance" into interesting components. Be sure the measure each
+contribution separately, in addition to a possible combined progress result.
+}
+
+Five case studies demonstrate the effectiveness of using the HUBcheck libraries
+to help automate tasks related to the hub. The case studies review the use of
+HUBcheck libraries to:
+
+\begin{enumerate}
+\item Validate of tool session containers
+\item Validate of website components
+\item Identify bad links on the hub
+\item Perform nightly builds and test for the Rappture Toolkit
+\item Automate hub services like nanohubu and contribtool
+\end{enumerate}
+
+\end{document}
+

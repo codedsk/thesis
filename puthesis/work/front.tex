@@ -1,0 +1,154 @@
+%
+%  revised  front.tex  2011-09-02  Mark Senn  http://engineering.purdue.edu/~mark
+%  created  front.tex  2003-06-02  Mark Senn  http://engineering.purdue.edu/~mark
+%
+%  This is ``front matter'' for the thesis.
+%
+%  Regarding ``References'' below:
+%      KEY    MEANING
+%      PU     ``A Manual for the Preparation of Graduate Theses'',
+%             The Graduate School, Purdue University, 1996.
+%      TCMOS  The Chicago Manual of Style, Edition 14.
+%      WNNCD  Webster's Ninth New Collegiate Dictionary.
+%
+%  Lines marked with "%%" may need to be changed.
+%
+
+  % Dedication page is optional.
+  % A name and often a message in tribute to a person or cause.
+  % References: PU 15, WNNCD 332.
+%%\begin{dedication}
+%%  This is the dedication.
+%%\end{dedication}
+
+  % Acknowledgements page is optional but most theses include
+  % a brief statement of apreciation or recognition of special
+  % assistance.
+  % Reference: PU 16.
+\begin{acknowledgments}
+%%  This is the acknowledgments.
+% family
+% advisor % committee
+% MMC and GAH HUBzero Team
+% Purdue Perl Mongers
+% ECE Grad Office
+
+I would like to express my gratitude to everyone who encouraged and worked with
+me through this process of exploring software based automation.
+
+I would like to thank my family for pushing me to always pursue education.
+
+I would like to thank my committee members, Professor Samuel Midkiff, Professor
+Mary Comer, Professor Milind Kulkarni, and Professor T. N. Vijaykumar, for
+teaching me about research and challenging my scientific thought process.
+
+I would like to thank Dr. Mike McLennan, Mr. George Howlett, and the HUBzero
+Team for providing time, resources, and feedback while working on this project.
+
+I would like to thank the members of the Purdue Perl Mongers and GLOSSY for
+providing a platform where people can express their software related
+experiences and idea.
+
+I would like to thank the staff and faculty of the College of Electrical and
+Computer Engineering, especially the members of the Graduate Office who have
+helped me start, continue, and finish my graduate education.
+
+\end{acknowledgments}
+
+  % The preface is optional.
+  % References: PU 16, TCMOS 1.49, WNNCD 927.
+%%\begin{preface}
+%%  This is the preface.
+%%\end{preface}
+
+  % The Table of Contents is required.
+  % The Table of Contents will be automatically created for you
+  % using information you supply in
+  %     \chapter
+  %     \section
+  %     \subsection
+  %     \subsubsection
+  % commands.
+  % Reference: PU 16.
+\tableofcontents
+
+  % If your thesis has tables, a list of tables is required.
+  % The List of Tables will be automatically created for you using
+  % information you supply in
+  %     \begin{table} ... \end{table}
+  % environments.
+  % Reference: PU 16.
+\listoftables
+
+  % If your thesis has figures, a list of figures is required.
+  % The List of Figures will be automatically created for you using
+  % information you supply in
+  %     \begin{figure} ... \end{figure}
+  % environments.
+  % Reference: PU 16.
+\listoffigures
+
+  % List of Symbols is optional.
+  % Reference: PU 17.
+%%\begin{symbols}
+%%  $m$& mass\cr
+%%  $v$& velocity\cr
+%%\end{symbols}
+
+  % List of Abbreviations is optional.
+  % Reference: PU 17.
+%%\begin{abbreviations}
+%%  abbr& abbreviation\cr
+%%  bcf& billion cubic feet\cr
+%%  BMOC& big man on campus\cr
+%%\end{abbreviations}
+
+  % Nomenclature is optional.
+  % Reference: PU 17.
+%%\begin{nomenclature}
+%%  Alanine& 2-Aminopropanoic acid\cr
+%%  Valine& 2-Amino-3-methylbutanoic acid\cr
+%%\end{nomenclature}
+
+  % Glossary is optional
+  % Reference: PU 17.
+%%\begin{glossary}
+%%  chick& female, usually young\cr
+%%  dude& male, usually young\cr
+%%\end{glossary}
+
+  % Abstract is required.
+  % Note that the information for the first paragraph of the output
+  % doesn't need to be input here...it is put in automatically from
+  % information you supplied earlier using \title, \author, \degree,
+  % and \majorprof.
+  % Reference: PU 17.
+\begin{abstract}
+
+% nobody knows what verification and validation are:
+% http://www.easterbrook.ca/steve/2010/11/the-difference-between-verification-and-validation/
+% http://www.softwaretestinghelp.com/what-is-verification-and-validation/
+
+The HUBzero Platform is a framework for building websites, referred to as
+``hubs,'' that promote research communities through online simulation, data
+management, and collaboration. With each software release, the HUBzero Team
+dedicates weeks of team members' time toward manually testing, fixing, and
+retesting hub components. The unique mixture of environments that make up a hub
+makes using existing automated testing solutions hard and shifts the burden of
+testing to humans, promoting variation, spot checking of fixes, and other
+shortcuts to avoid the high cost of completely retesting the system. With over
+twenty hubs being actively managed by the HUBzero Team, manually testing each
+one after a software update is resource and time prohibitive.
+
+The HUBcheck library, a collection of Python modules backed by Selenium
+WebDriver and Paramiko, was built to help developers write automation scripts
+for HUBzero websites and the Debian Linux based virtual containers hosting the
+hub's simulation tools. Today, the HUBzero Team is using HUBcheck to perform
+automated regression testing on all of its production hubs, regularly testing
+areas of the hub that were previously overlooked. In this document, we
+investigate how HUBcheck works, introduce three new design patterns that make
+writing page object based automation easier, and show how the use of HUBcheck
+has helped reduce the number of misconfigured systems during a one year period
+of hub upgrades.
+
+\end{abstract}

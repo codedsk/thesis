@@ -1,0 +1,139 @@
+* what is hubzero, what is a hub 
+    - hubzero is a framework for building websites ...
+
+* explain the problem
+    - hubzero history, started with nanohub, expanded to pharmahub, ccehub, ..., soon managed 20 hubs
+    - the HUBzero team manages around 20 hubs off of one code base.
+    = show slide with a bunch of mini hub servers and disks
+    = nanohub
+    = pharmahub thermalhub indianactsi
+    = hubzero cathub ccehub drinet memshub vhub hpc2 ....
+    = a single machine representing the one code base in the center
+    - each hub has its own configuration.
+    = add a little configuration file to each hub server and disk
+    - when we release software, sometimes we introduce bugs,
+    = show that there could be bugs in the one code base
+    - when HUBzero software gets upgraded on hubs, sometimes configurations
+      are incompatible with the upgraded software, causing features not to
+      work.
+    = show that there could be bugs in how the new software and config interact.
+    - when we reboot machines, sometimes systems don't come up properly,
+      configs are messed up, disks mounted in wrong order,
+      reboot reveals misconfiguration
+    = show bugs come up after reboots, maybe around disk mounts
+* what tools are available, why don't they solve the problem
+    - we notice most problems because something on the website isn't working properly.
+      ex: contribtool process, starting tool session container, Rappture feature (converting units)
+    - you find out about the problem at the most embarrasing time,
+      like when you are sitting with the client, following documentation,
+      or showing them how something works.
+    - while in good software practice, we would have a broad base of automated unit tests
+    = show the testing pyramid
+    - our current system didn't have any automated tests. and while just trying to get a handle on
+      when things break and where they are broken, starting at the ui level would at least
+      allow us to make sure the examples and procedures that we want our customers to use
+      were work properly.
+    = show the ui section of the pyramid,
+    = listing possible tools that test the ui level:
+    = IBM Security AppScan, Sahi, Selenium WebDriver, others...
+    - so we focus on testing at the UI level, and ended up choosing
+      Selenium WebDriver due to its programmability, which allowed us
+      combine in the Paramiko library, expanding the realm of tasks and
+      checks we could automate.
+* show the hubcheck solution
+    = show that Selenium WebDriver + Paramiko + other libs = HUBcheck
+    - hubcheck is a library built on top of Selenium WebDriver, Paramiko, BrowserMob Proxy, ffmpeg, vnc, X server utilities
+      (maybe include block diagram of hubcheck?)
+    - written in Python, allows developers to build automation scripts
+      that mimic the user's experience, interacting with web
+      pages the same way a use would.
+    - provides ways to build abstractions of hub web pages.
+    - provides ways to connect to tool session containers over SSH
+* brief overview of performing web automation using hubcheck
+    = show hubcheck block diagram highlight web module
+    - to demonstrate using hubcheck to perform web automation,
+      lets consider writing a script to login to the hub webpage.
+    = show listing 6.1
+    = show hub login page
+    = nanohub_good_link_1.png nanohub_login_form.png,
+    - our goal is to navigate to the login page
+    - fill in the username field,
+    - fill in the password field,
+    - then push the submit button.
+    - in our script, using hubcheck, we setup a web browser,
+    - navigate to the login page,
+    - load a "page object", an abstraction of the hub login page,
+    - then we ask the abstraction to fill in the username field,
+    - ask the abstraction to fill in the password field,
+    - lastly ask the abstraction to push the submit button.
+    - and check that we were successful in logging in.
+* brief overview of performing ssh automation using hubcheck
+    = show hubcheck block diagram highlight shell module
+    - similarly, we can access a tool session container using the hub's VirtualSSH interface.
+    - show how to ssh into a tool session container on the command line (Listing 6.12)
+    - show how to ssh into a tool session container using hubcheck (Listing 6.13)
+    - explain a little bit about the expect-like interface.
+* combining web and ssh automation
+    - one of the advantages of using Selenium's programmable interface is
+      combining it with paramiko code allows us to test processes that are
+      time consuming to setup, like parameter passing.
+    - discuss what parameter passing is all about
+    - why is it hard ?
+    - we can write programs to setup tool,
+      then issue urls to the hub and make
+      sure they make it through the labyrinth.
+* hubcheck based tools
+    - a number of tools built on top of hubcheck library
+    - Nightly Rappture Builds - login to a tool session container and build Rappture toolkit, run unit test suites
+    - Registering users for courses on nanohub.org
+    - hctestrunner - hubcheck test runner.
+* testing results
+    - the experiment: from feb 2014 - feb 2015, ran two test suites,
+      weekly and nightly, on hubs managed by the HUBzero team.
+    - over same period of time, most of hubs went through web site upgrade,
+      some hubs went through tool session container upgrade.
+    - hubcheck was used to notify team of hubs that were not properly
+      functioning as defined by the hubcheck tests, a standard based
+      on previous years of managing hub software.
+    - identified three types of hubs and turbulent, upgraded, new hubs.
+    - Over the monitoring period HUB A was found to qualify as a turbulent hub,
+      with many new unexpected failures being tracked.
+    = show Figure 8.1
+    - 
+
+* design patterns
+    - IframeWrap Pattern, description field example
+    - Figure 7.13, HTML <textarea> based editor
+    - used a TextArea class from hubcheck's page objects to represent the widget.
+    - recently web developers upgraded fields to rich text editor.
+    - looked to update the page objects to handle the new editor type and noticed the <body> tag inside of an iframe.
+    - the TextArea class 
+
+
+* extra slides:
+    - show selenium commands to login to the hub, without hubcheck and without page objects
+    - show paramiko commands to login to the hub, without ToolSession command and expect-like interface
+
+
+
+credits:
+
+idealautomatedtestingpyramid.png
+http://watirmelon.com/2012/01/31/introducing-the-software-testing-ice-cream-cone/
+http://watirmelon.files.wordpress.com/2012/01/idealautomatedtestingpyramid.png
+
+softwaretestingicecreamconeantipattern.png
+http://watirmelon.com/2012/01/31/introducing-the-software-testing-ice-cream-cone/
+http://watirmelon.files.wordpress.com/2012/01/softwaretestingicecreamconeantipattern.png
+
+firefox.jpeg
+https://www.mozilla.org/en-US/firefox/desktop/
+https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUo0rWry5U8HYoCGk7unarpbQDdIROcorXY11vgySaymR8PyEulueQv5eN
+
+selenium-big-logo.png
+http://docs.seleniumhq.org/projects/webdriver/
+http://docs.seleniumhq.org/images/big-logo.png
+
+paramiko.png
+http://www.lag.net/paramiko/legacy.html
+http://www.lag.net/paramiko/paramiko.png

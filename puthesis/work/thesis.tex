@@ -1,0 +1,353 @@
+%
+%  thesis.tex  2011-07-01  Mark Senn  http://engineering.purdue.edu/~mark
+%
+%  This is the thesis ``root file''.
+%
+%  To print the final copy of your thesis put a '%'
+%  in front of the \includeonly command and type
+%  (from page 71 of _LaTeX User's Guide and Reference Manual_, 2nd edition):
+%      latex thesis
+%      bibtex thesis
+%      latex thesis
+%      latex thesis
+%
+%  In "Reference:" listings below:
+%      KEY  MEANING
+%      TM   ``A Manual for the Preparation of Graduate Theses'',
+%             seventh revised edition, The Graduate School, 2006.
+%             http://www2.itap.purdue.edu/gradschool//Publications/graduate-thesis-manual.pdf
+%      PU   ``A Manual for the Preparation of Graduate Theses'',
+%           The Graduate School, Purdue University, 1996.
+%           http://www2.itap.purdue.edu/gradschool//Publications/graduate-thesis-manual.pdf
+%
+%  Search for "CHANGE" below and change things as necessary.
+%  I recommend putting "%%" before any existing lines that
+%  need to be changed and adding your new line(s) immediately
+%  below the existing lines.
+%
+
+% See http://www.ecn.purdue.edu/~mark/puthesis/#Options
+% for documentclass options.
+% CHANGE NEXT LINE?
+\documentclass[ece,thesis]{puthesis}
+
+% Define "align" environment used in demo-mathematics.tex.
+% CHANGE NEXT LINE?
+\usepackage{amsmath}
+
+% Define "multicols" environment environment used in demo-multicols.tex.
+% CHANGE NEXT LINE?
+\usepackage{multicol}
+
+% Define "subfigure" environment used in "demo-figure.tex".
+% CHANGE NEXT LINE?
+% \usepackage{subfigure}
+
+% put boxes around our figures
+\usepackage{float}
+%\floatstyle{boxed}
+%\restylefloat{figure}
+
+% to get figures with side captions, and wrap text around figures
+% https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
+\usepackage{sidecap}
+\usepackage{wrapfig}
+
+% include subfigures for pageobjects.tex
+% added style=base to help deal with compiler warning
+% for unsupported document class
+% using setspace so we can set our captions to be single spaced,
+% not sure why they became unsingle spaced.
+\usepackage[style=base]{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+
+
+% Define "graphicx" environment used in "casestudy3.tex".
+\usepackage{graphicx}
+
+% Define "fontenc" environment used to angle brackets
+% see http://texblog.net/latex-archive/fonts/symbols/
+\usepackage[T1]{fontenc}
+
+% packages for \code command in mydefs
+% for code blocks to use Courier New
+% \usepackage{fontspec}
+% for code block colors
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+% for code block writing text in a drawing
+\usepackage{tikz}
+% for code block syntax highlighting?
+\usepackage{listings}
+
+% Define "enumerate" environment for numbered lists
+\usepackage{enumerate}
+
+% Define environment for building outlines
+% temporarily needed for hubzero.tex
+\usepackage{outlines}
+\usepackage{enumitem}
+
+% for code listings, defined in mydefs.tex
+\usepackage{courier}
+
+% for problems.tex minipage environment
+%\usepackage[floatraw]{chemstyle}
+%\usepackage{chemstyle}
+
+% include tables that wrap text in columns
+\usepackage{tabularx}
+
+% include clever references, automatic names before
+% section/chapter/appendix references
+\usepackage{cleveref}
+
+
+% include url package for online citations
+\usepackage{url}
+
+% By default the URLs are put in typewriter type in the body and the
+% bibliography of the document when using the \url command.  If you are
+% using many long URLs you may want to uncommennt the next line so they
+% are typeset a little smaller.
+% \renewcommand{\UrlFont}{\small\tt}
+
+
+
+% Title of thesis (used on cover and in abstract).
+% The title shown must be the full, official title of the
+% thesis.  Superscripts and subscripts are not permitted in
+% the title.
+% Reference: TM 26.
+% Use \title{Put Title Here} for a one-line title.
+% Use \\ to separate lines.
+% Put % at the end of the last line to avoid getting an extra space
+% in the abstract.
+% There are two forms of title: one line or more than one line.
+% There are examples of both below.
+% Only use one \title.
+% CHANGE NEXT FOUR LINES.
+%%\title{An Example Thesis Done with LaTeX}
+%%\title{%
+%%  An Example Thesis Done with LaTeX\\
+%%  with a Very Long Title%
+%%}
+\title{HUBcheck: Check the Hub}
+
+% First author name with first name first is used for cover.
+% Second author name with last name first is used for abstract.
+% Your full name as it appears in the University records appears
+% on the cover.
+% Reference: TM 26, 29.
+% There are two forms of author, with and without initials.
+% There are examples of both below.
+% Only use one \author line.
+% CHANGE NEXT TWO LINES.
+%%\author{Mark Senn}{Senn, Mark}
+%%\author{Mark D. Senn}{Senn, Mark D.}
+\author{Derrick S. Kearney}{Kearney, Derrick S.}
+
+% First is long title of degree (used on cover).
+% Second is abbreviation for degree (used in abstract).
+% Third is the month the degree was (will be) awarded (used on cover
+% and abstract).
+% Last is the year the degree was (wlll be) awarded (used on cover
+% and abstract).
+% The degree title for all doctoral candidates is ``Doctor of Philosophy.''
+% The precise degree names for master's candidates appear in the list of
+% ``Degrees Offered'' in the Graduate School bulletin.
+% The date is the month and year that the degree is actually awarded.
+% (If you have registered for ``degree only,'' revise the thesis title
+% page to reflect the new date on which the degree is to be awarded.)
+% Reference: TM 26--27, 30.
+% CHANGE NEXT LINE?
+%%\pudegree{Doctor of Philosophy}{Ph.D.}{May}{2007}
+\pudegree{Master of Science in Electrical and Computer Engineering}{M.S.E.C.E.}{May}{2015}
+
+% Major professor (used in abstract).
+% Use, for example:
+%     \majorprof{John Q. Professor}
+%     \majorprofs{John Q. Professor and Thomas R. Jones}
+%     \majorprofs{John Q. Professor, Thomas R. Jones, and David S. Smith}
+% depending on the number of major professors you have.
+% CHANGE NEXT LINE.
+%%\majorprof{John Q. Professor}
+\majorprof{Sam Midkiff}
+
+% Campus (used only on cover)
+% Use one of the following:
+%     Fort Wayne
+%     Hammond
+%     Indianapolis
+%     West Lafayette
+%     Westville
+% Reference: TM 27.
+% CHANGE NEXT LINE?
+\campus{West Lafayette}
+
+% My command definitions not specific to my thesis.
+% CHANGE NEXT LINE?
+\input{mydefs}
+
+
+% My command definitions specific to my thesis.
+
+% CHANGE NEXT LINE TWO LINES?
+% Set things up so \margins will show where the margins on the page are.
+\newcommand{\margins}{\Repeat{Show where the margins for the page are.}{4}}
+
+% CHANGE NEXT TWO LINES?
+% Let typing "\en" be exactly the same as typing "\ensuremath". 
+\let\en=\ensuremath
+
+% CHANGE NEXT FIVE LINES?
+% Define a \ve command with two arguments, so if it called with
+%     \ve an
+% it will expand to
+%     {\en{a_1},~\en{a_2},\ \ldots,~\en{a_{n}}}
+\newcommand{\ve}[2]{\en{#1_1},~\en{#1_2},\ \ldots,~\en{#1_{#2}}}
+
+
+% To LaTeX only some parts of your thesis put the
+% names of the parts to include here.  For example,
+% \includeonly{front} would only process front.tex.
+% \includeonly{front,introduction} would only process
+% front.tex and introduction.tex.
+% To print the final copy of your thesis put a '%'
+% in front of the \includeonly command and run LaTeX
+% three times to make sure that all cross-references
+% are correct.  Then run BibTeX once and LaTeX twice
+% more.
+% CHANGE NEXT LINE?
+%\includeonly{front,introduction}
+
+
+\begin{document}
+
+% Start a new volume for your thesis.  All theses must have at least one
+% volume.  If your thesis is too long to fit in one binder put another
+% "\volume" between chapters below.
+\volume
+
+% Front matter (dedication, etc.).
+\include{front}
+
+% Put chapter \include commands here.
+% CHANGE \include{...} COMMANDS BELOW?
+\include{introduction}
+
+% prior work, related work
+\include{relatedwork}
+
+% about hubzero infrastructure in general
+% what are the main features of a hub
+% popular components:
+%   groups
+%   tickets
+%   wishlist
+%   courses
+%   tools
+%   resources
+%   projects
+\include{hubzero}
+
+% talk about the types of problems faced by the hub
+% and how hubcheck is used to solve them.
+\include{problems}
+
+% talk about the external libraries that hubcheck depends upon.
+% selenium webdriver
+% browsermob proxy
+% paramiko
+\include{external_libs}
+
+% about hubcheck in general
+% what does a test look like
+% how are tests stored
+% how are tests run
+% what do test results look like
+% what tools have been created with hubcheck libraries
+\include{hubcheck}
+
+% design patterns for use when building page objects
+% WebForm pattern
+% ItemList pattern
+% IframeWrap pattern
+\include{design_patterns}
+
+% building tests and tools with hubcheck libraries
+% how does selenium work
+% description of hubcheck libraries built on top of selenium
+% example uses of selenium based hubcheck libraries
+% how does expect work
+% hubcheck libraries built on top of expect
+% example uses of expect based hubcheck libraries
+% how to use the libraries to build tests
+% how to use the libraries to build tools
+%\include{selenium1}
+%\include{pageobjects}
+%\include{shell_automation}
+
+% case studies of using hubcheck to identify errors
+% case study 1: testing web components
+% case study 2: testing tool session containers
+% case study 3: finding bad links
+% case study 4: Rappture nightly build and test
+% case study 5: BD testing?
+% \include{casestudy_contribtool}
+% \include{casestudy_bad_links}
+
+% Summary and/or conclusions are optional but often used.
+% The summary and/or conclusions often are the last
+% major division(s) of the text.
+% Reference: TM 32.
+% CHANGE NEXT LINE?
+%\include{summary}
+\include{solutions}
+
+% Recommendations are optional.
+% You may include recommendations as a major division if your
+% subject matter and research dictate.
+% Reference: TM 32.
+% CHANGE NEXT LINE?
+\include{recommendations}
+
+% Appendices are optional.
+% Appendices are not necessarily part of every thesis. Appendices are used
+% for supplementary illustrative material, original data, computer programs,
+% and other material not necessarily appropriate for inclusion within the
+% text of your thesis. 
+% Reference: TM 33.
+% Use "\appendix" for one appendix or "\appendices" for more than one
+% appendix.
+% CHANGE NEXT 7 LINES?
+%\appendices
+%\include{basepageelements}
+%\include{parameter_pass_testing}
+%%\include{demo-citations}
+%%\include{demo-figures}
+%%\include{demo-mathematics}
+%%\include{demo-multicols}
+%%\include{demo-tables}
+%%\include{demo-text}
+
+% Bibliography is required if you consulted any outside references.
+% Reference: TM 32.
+\include{bibliography}
+
+% Notes and footnotes are optional.
+% Reference: TM 34.
+% I have not implemented this yet.  Mark Senn 2002-06-03
+%%\include{notes}
+
+% A vita is optional for masters theses
+% and required for doctoral dissertations.
+% Reference: TM 13.
+% CHANGE NEXT LINE?
+%%\include{vita}
+
+\end{document}
+
+% LaTeX won't read after the \end{document} command.
+% You can put notes to yourself or LaTeX input not
+% ready for use here if you'd like.

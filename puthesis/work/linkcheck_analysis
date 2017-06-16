@@ -1,0 +1,1080 @@
+Types of bad links from nees.org
+
+On Nov 18, 2012, we ran linkcheck on https://nees.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: nees.org_linkdata_1353259505.tgz
+Run Time: about 35 hours
+Exit Status: successfull
+pages checked: 17697
+urls checked: 19763
+Unique 404 Error Urls: 74
+Total 404 Error: 322
+linkcheck flags: --ignore /warehouse/filebrowser --delay 0.5 --locators nees
+
+
+Breakdown of unique 404 links by type:
+
+1. Phone number links
+
+Example : https://nees/org/members/1142
+key : ScuQH1_HYi6k91q3UK7L7EOEf2-BGok8PaMNoAQzG7g=
+link_text : 989-708-0580
+target : https://nees.org/989-708-0580
+
+If a user is on a mobile device, and a phone number is available in the user
+profile, the user would be able to click the link of the phone number and the
+mobile device can call the number. The errror occurs when the user is viewing
+the user profile in a web browser on a non-mobile device. The linked phone
+number leads to a 404 page. Even on a mobile device, (mozilla firefox mobile
+nightly), the links lead to 404 pages.
+
+to identify this type of link, look for a locator of this form:
+css=ul#profile > li:nth-child(3) > div:nth-child(1) > div:nth-child(2) > a:nth-child(1)
+css=a.phone
+
+https://nees.org/989-708-0580
+https://nees.org/808-956-6536
+https://nees.org/1-610-758-6252
+https://nees.org/1-765--496-3736
+https://nees.org/510-643-7035
+https://nees.org/408-924-3861
+https://nees.org/305-775-7665
+https://nees.org/512-232-3683
+https://nees.org/858-382-1654
+https://nees.org/765-494-2186
+https://nees.org/213-400-0833
+https://nees.org/310-825-9819
+https://nees.org/530-754-9761
+https://nees.org/310-2674655
+https://nees.org/408-924-3855
+https://nees.org/217-649-0334
+
+16 links
+
+
+
+
+
+2. Bread crumb links
+
+Example : https://nees.org/resources/770
+key : x8k1jtO1um4aLhXPehbEFwvC5HW3dhMLksxp2P4zDd0=
+link_text : Active Documents
+target : https://nees.org/groups/app-epet1/resources?area=activedocuments
+
+to identify this type of link, look for a locator of this form:
+css=div#trail
+
+https://nees.org/groups/app-epet1/resources?area=activedocuments
+https://nees.org/content
+https://nees.org/wishlist/add?category=&rid=0
+https://nees.org/groups/app-epet1/resources
+
+4 links
+
+
+
+
+3. hard coded download links
+
+Example : https://nees.org/simulation
+key : rNpaoiHssVs_abwhkf6_vTxArvz6-9Inr2wWTE5KxXY=
+link_text :
+target : https://nees.org/resources/942/download/Deepsoilv3_7_setup.msi
+
+this link was hard coded with the version number embedded in the link. when the
+version was upgraded, the file was removed and the link was broken. might want to use
+a template file name like Deepsoilv*.msi and sort on filename.
+
+
+to identify this type of link, look for a locator of this form:
+
+
+https://nees.org/resources/942/download/Deepsoilv3_7_setup.msi
+
+1 link
+
+
+
+
+
+4.1 out of site referral links
+
+Example : https://nees.org/education/cmmi-poster-session-main
+key : AEiT2mRgdUppkKrdTKmwyKJJYizCYR21zCKD_669OuQ=
+link is an image
+target : https://nees.org/eot.neeshub.org/CMI
+
+this was a link to another website, eot.neeshub.org/CMI. we believe the bad
+link was introduced to the site through the custom text input widget on the
+resource contribution page.
+
+
+
+
+https://nees.org/eot.neeshub.org/CMI
+https://nees.org/www.ruf.rice.edu/~dsg%20target=
+https://nees.org/users.nees.utexas.edu/songcheng/
+
+3 links
+
+
+4.2 out of site referral links with quotes
+
+Example : https://nees.org/resources/frame3dd
+key : UABmvzQRp6G9GlC_Qv279ENMVi_BlWKrzlsCwYGeHbQ=
+link is an image
+target : https://nees.org/resources/%5C%22http://www.vim.org/%5C%22
+
+the wiki text editor widget used by nees adds double quotes around the link
+%5C%22 is the double quote.
+
+
+to identify this type of link, look %5C%22  or %22 in link url.
+
+
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/tg/detail/-/0534206700/qid=1036162662/sr=1-4/ref=sr_1_4/002-7358683-1549619?v=glance\\%22
+https://nees.org/resources/%5C%22http://www.amazon.com/Structural-Analysis-MASTAN2-William-McGuire/dp/0471376515/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1198185313&sr=8-1\\%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0133014584/qid=1003515087/sr=1-1/ref=sr_1_27_1/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22http://www.vim.org/%5C%22
+https://nees.org/resources/%5C%22http://peer.berkeley.edu/%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0070113920/qid%3D1003514837/ref%3Dsr%5F11%5F0%5F1/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0486411818/ref=pd_pym_sim_1_2/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22http://qcn.stanford.edu/index.php%5C%22
+https://nees.org/resources/%5C%22http://nees.org/resources/3825%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0070841004/qid%3D1010096524/ref%3Dsr%5F11%5F0%5F1/103-4346676-9568602%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0471551570/ref=pd_cp_nsr_b_1/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22http://www.rappture.org/%5C%22
+https://nees.org/resources/%5C%22https://nees.org/feedback%5C%22
+https://nees.org/resources/%5C%22http://dx.doi.org/10.1193/1.3459159%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/013137589X/qid=1003514318/sr=1-1/ref=sr_1_8_1/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22http://nees.org/dataview/spreadsheet/aci_publications%5C%22
+https://nees.org/resources/%5C%22http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6V36-3YB56X8-9&_user=10&_coverDate=02%2F28%2F1995&_rdoc=5&_fmt=high&_orig=browse&_srch=doc-info%28%23toc%235722%231995%23999809998%23154123%23FLP%23display%23Volume%29&_cdi=5722&_sort=d&_docanchor=&_ct=11&_acct=C000050221&_version=1&_urlVersion=0&_userid=10&md5=6e4bfbc9d1ce188436efb35e9a9e444d\\%22
+https://nees.org/resources/%5C%22http://berkeley.edu/%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0521431085/qid=1003515201/sr=1-1/ref=sr_1_10_1/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22https://nees.org/feedback/report_problems/%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/1577661435/qid=1003515858/sr=1-2/ref=sr_1_12_2/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22http://earthquakespectra.org/doi/abs/10.1193/1.3459159%5C%22
+https://nees.org/resources/%5C%22http://www.emeraldinsight.com/Insight/viewContentItem.do;jsessionid=AFE435BAE8FB9E5AD60E5AEDC2A3ADB3?contentType=Article&contentId=878085\\%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0486649482/qid=1003514977/sr=1-1/ref=sr_1_8_1/002-2386037-4350467%5C%22
+https://nees.org/resources/%5C%22http://www.amazon.com/exec/obidos/ASIN/0486654079/qid=1003515697/sr=2-1/ref=sr_2_11_1/002-2386037-4350467%5C%22
+
+25 links
+
+
+
+
+5. bad links on error pages
+
+Example : https://nees.org/resources/about/contact
+key : gz0cxScGLja7nt0O0vLQYblWZu4e6FU8F7Vwi1XMYio=
+link : Contact Us
+target : https://nees.org/resources/about/contact
+
+Footer links on error pages lead to 404 error pages themselves.
+This seems to be unique to nees.org, perhaps when they changed
+their error page handler, there was a mistake in the way footer
+urls were created. The urls always have the same base as the error page they came from.
+
+
+to identify this type of link, look for a locator starting with div#footer and
+the parent and target having the same base url. ex:
+https://nees.org/resources/4332 -> https://nees.org/resources/legal/terms.
+Also check if the parent_url is displaying an error code, any footer link will
+be incorrect.
+
+
+https://nees.org/resources/about/contact
+https://nees.org/resources/legal/terms
+https://nees.org/resources/legal/accessibility
+https://nees.org/resources/about
+https://nees.org/resources/legal/licensing
+https://nees.org/resources/about/overview
+https://nees.org/resources/xmap
+https://nees.org/resources/feedback
+https://nees.org/resources/about/overview/partners
+
+9 links
+
+
+
+6. bad links from website reorganization
+
+Example: https://nees.org/content/520-neesreuprogramsummer2012?tmpl=component&print=1&page=
+key : mdrsYmmd16f6bi3GZH-XdSi8WnpJodSToMQpmmNv0vc=
+link : here
+target: https://nees.org/for-students/reu-program/neesreulearningmodules
+
+link should have lead to https://nees.org/education/for-students/reu-program/neesreulearningmodules
+
+
+https://nees.org/contribute
+https://nees.org/contribute/tools/register
+https://nees.org/for-students/reu-program/neesreulearningmodules
+https://nees.org/contribute/tools/
+
+4 links
+
+
+
+
+7. other bad links
+Check out things with @ sign that get automatically converted to a link
+
+https://nees.org/tags/assessmenttsunamiwavesengineeringeotgradesk-6gradesk-12sciencequestions
+https://nees.org/EES@UCSB
+https://nees.org/kb/data_curation
+https://nees.org/href=
+https://nees.org/news/category/release_announcement/
+https://nees.org/education/education/outreach-activities
+https://nees.org/EES@UTexas
+https://nees.org/education/for-public
+https://nees.org/@ST
+https://nees.org/education/for-teachers/myoe
+https://nees.org/education/for-professionals/highlight-gallery
+
+
+11 links
+
+
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from core.hubzero.org
+
+On Nov 29, 2012, we ran linkcheck on https://core.hubzero.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: core.hubzero.org_linkdata_1353100998.tgz
+Run Time: 35 minutes
+Exit Status: successfull
+pages checked: 436
+urls checked: 462
+Unique 404 Error Urls: 27
+Total 404 Error: 33
+
+Breakdown of unique 404 links by type:
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+
+bad links shown on front page
+https://core.hubzero.org/resources/animations
+https://core.hubzero.org/resources/presentations
+https://core.hubzero.org/resources/othermaterials
+
+bad links shown on /about
+https://core.hubzero.org/contributors/
+https://core.hubzero.org/resources/learningmodules
+https://core.hubzero.org/contribute
+
+7. other bad links
+
+https://core.hubzero.org/tour/
+https://core.hubzero.org/xpoll
+
+
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from hubzero.org
+
+On Nov 16, 2012, we ran linkcheck on https://hubzero.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: hubzero.org_linkdata_1353044660.tgz
+pages checked: 4133
+urls checked: 4191
+Run Time: unknown, about 1 hour
+Exit Status: successfull
+Unique 404 Error Urls: 59
+Total 404 Error: 105
+linkcheck flags: --delay 1.0 --locators hubzero
+
+
+1. Phone number links
+
+https://hubzero.org/602-882-5582
+https://hubzero.org/765.494.0840
+https://hubzero.org/765.496.7395
+
+2. Bread crumb links
+
+https://hubzero.org/wishlist/add?category=&rid=0
+
+3. hard coded download links
+4. out of site referral links
+
+https://hubzero.org/resources/%5C%22http://www.rappture.org%5C%22
+https://hubzero.org/resources/%5C%22/kb/tips/webdav%5C%22
+https://hubzero.org/resources/%5C%22/feedback/report_problems/%5C%22
+
+5. bad links on error pages
+6. bad links from website reorganization
+
+https://hubzero.org/tour/hosting
+https://hubzero.org/contribute/tools/
+https://hubzero.org/myhub/
+https://hubzero.org/contribute/notes
+https://hubzero.org/legal/contribute
+https://hubzero.org/contribute/presentations/
+https://hubzero.org/about/logos
+https://hubzero.org/tour/distribution
+https://hubzero.org/contribute/downloads
+https://hubzero.org/contribute/onlinepresentations
+https://hubzero.org/kb/tags/faq
+https://hubzero.org/kb/faq
+https://hubzero.org/about/copyright
+https://hubzero.org/contribtool/create
+https://hubzero.org/contribute/animations
+https://hubzero.org/contribute/teachingmaterials
+https://hubzero.org/contribute/publications
+https://hubzero.org/contribute/tools
+https://hubzero.org/kb/points
+
+# resources no longer exist
+https://hubzero.org/resources/3061
+https://hubzero.org/resources/3863
+https://hubzero.org/resources/3081
+
+
+
+7. other bad links
+
+# these are seen on documentation web pages:
+https://hubzero.org/templates.css
+https://hubzero.org/index.installation
+https://hubzero.org/templates.overrides
+https://hubzero.org/Screen.menus.edit.15
+https://hubzero.org/Screen.modules.edit.15
+https://hubzero.org/index.fileaccess
+https://hubzero.org/Content_creators
+
+# publicity link
+https://hubzero.org/nanoHUB.org
+
+# perhaps this wish was deleted in the db?
+https://hubzero.org/wishlist/general/1/wish/327
+
+8. bad permalink - permalinks don't work, possibly due to website reorg
+
+https://hubzero.org/wishlist/1/wish?ref=325
+https://hubzero.org/wishlist/4/wish?ref=327
+https://hubzero.org/wishlist/1/wish
+https://hubzero.org/wishlist/1/wish?ref=324
+https://hubzero.org/wishlist/1/wish?ref=326
+https://hubzero.org/wishlist/1/wish?ref=328
+
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+
+https://hubzero.org/index.php:20/answers/?scope=answer&pagename=14%3A20
+https://hubzero.org/groups/itmig_hipaa_safeguards/wiki/ITMIGdatabase
+https://hubzero.org/CN@Purdue
+https://hubzero.org/hymoma@localhost
+
+10. bad rss feed links
+
+https://hubzero.org/blog/feed.rss/2012/11
+https://hubzero.org/blog/feed.rss/2012/10
+https://hubzero.org/blog/feed.rss/2012/1
+https://hubzero.org/blog/feed.rss/2012/3
+https://hubzero.org/blog/feed.rss/2012/2
+https://hubzero.org/blog/feed.rss/2012/5
+https://hubzero.org/blog/feed.rss/2012/4
+https://hubzero.org/blog/feed.rss/2012/7
+https://hubzero.org/blog/feed.rss/2012/6
+https://hubzero.org/blog/feed.rss/2012/9
+https://hubzero.org/blog/feed.rss/2012/8
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from memshub.org
+
+On Nov 24, 2012, we ran linkcheck on https://memshub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: memshub.org_linkdata_1353773477.tgz
+Run Time: unknown, about 1 hour
+Exit Status: successfull
+pages checked: 1349
+urls checked: 1352
+Unique 404 Error Urls: 4
+Total 404 Error: 4
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+
+2. Bread crumb links
+
+3. hard coded download links
+4. out of site referral links
+
+5. bad links on error pages
+6. bad links from website reorganization
+
+https://memshub.org/contribute/tools/
+https://memshub.org/contributors/
+https://memshub.org/contribute/presentations/
+https://memshub.org/resources/presentations
+
+7. other bad links
+
+8. bad permalink - permalinks don't work, possibly due to website reorg
+
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from pharmahub.org
+
+On Nov 24, 2012, we ran linkcheck on https://pharmahub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: pharmahub.org_linkdata_1353778243
+Run Time: unknown
+Exit Status: successfull
+pages checked: 3662
+urls checked: 3680
+Unique 404 Error Urls: 19
+Total 404 Error: 165
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from cuahd.org
+
+On Nov 29, 2012, we ran linkcheck on https://cuahd.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: cuahd.org_linkdata_1354173844.tgz
+Run Time: unknown, about 1 hour
+Exit Status: successfull
+pages checked: 926
+links checked: 937
+Unique 404 Error Urls: 12
+Total 404 Error: 44
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from cuahd.org
+
+On Nov 29, 2012, we ran linkcheck on https://cuahd.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: cuahd.org_linkdata_1354173844.tgz
+Run Time: unknown, about 1 hour
+Exit Status: successfull
+pages checked: 926
+urls checked: 937
+Unique 404 Error Urls: 12
+Total 404 Error: 44
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+
+https://cuahd.org/wishlist/add?category=&rid=0
+
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+
+https://cuahd.org/resources/about/dmcapolicy
+https://cuahd.org/resources/about/accessibility
+
+6. bad links from website reorganization
+
+https://cuahd.org/contribute/presentations/
+https://cuahd.org/resources/publications/
+https://cuahd.org/legal/contribute
+https://cuahd.org/resources/teachingmaterials/
+
+
+# these are a part of the original "known bad links" hubcheck test suite:
+https://cuahd.org/resources/downloads/
+https://cuahd.org/resources/onlinepresentations/
+https://cuahd.org/resources/2562/download/20061128-410_presenter_v_5.1.269.exe
+https://cuahd.org/legal/videotaping
+https://cuahd.org/site/templates/presentation_tmplt.ppt
+
+7. other bad links
+
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from geoshareproject.org
+
+On Nov 29, 2012, we ran linkcheck on https://geoshareproject.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: geoshareproject.org_linkdata_1354165745.tgz
+Run Time: unknown, about 1 hour
+Exit Status: successfull
+pages checked: 955
+urls checked: 969
+Unique 404 Error Urls: 15
+Total 404 Error: 20
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+
+# these are a part of the original "known bad links" hubcheck test suite:
+
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from purduehub-u.purdue.edu
+
+On Nov 29, 2012, we ran linkcheck on https://purduehub-u.purdue.edu. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: purduehub-u.purdue.edu_linkdata_1354177720.tgz
+Run Time: unknown, about 30 minutes
+Exit Status: successfull
+pages checked: 444
+urls checked: 459
+Unique 404 Error Urls: 16
+Total 404 Error: 32
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+
+# these are a part of the original "known bad links" hubcheck test suite:
+
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from nanohub.org
+
+On Nov 25, 2012, we ran linkcheck on https://nanohub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: nanohub.org_linkdata_1353866908.tgz
+Run Time: unknown, on the order of days
+Exit Status: stopped for system upgrade
+pages checked: 16558 (21879 todo)
+urls checked: 38811
+Unique 404 Error Urls: 367
+Total 404 Error: 17640
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+
+# these are a part of the original "known bad links" hubcheck test suite:
+
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from trust-hub.org
+
+On Nov 29, 2012, we ran linkcheck on https://trust-hub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: trust-hub.org_linkdata_1354207650.tgz
+Run Time: 8 hours
+Exit Status: successfully
+pages checked: 5060
+urls checked: 5065
+Unique 404 Error Urls: 6
+Total 404 Error: 8526
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from ctsacorus.org
+
+On Nov 29, 2012, we ran linkcheck on https://ctsacorus.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: ctsacorus.org_linkdata_1354230634.tgz
+Run Time: 3.25 hours
+Exit Status: successfully
+pages checked: 2293
+urls checked: 2295
+Unique 404 Error Urls: 3
+Total 404 Error: 3
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from metastudio.org
+
+On Nov 29, 2012, we ran linkcheck on https://metastudio.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: metastudio.org_linkdata_1354247026.tgz
+Run Time: 12.63 hours
+Exit Status: successfully
+pages checked: 5579
+urls checked: 5600
+Unique 404 Error Urls: 21
+Total 404 Error: 52
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from habricentral.org
+
+On Nov 30, 2012, we ran linkcheck on https://habricentral.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: habricentral.org_linkdata_1354295841.tgz
+Run Time: 8.63 hours
+Exit Status: successfully
+pages checked: 5320
+urls checked: 5375
+Unique 404 Error Urls: 56
+Total 404 Error: 161
+linkcheck flags: --locators hubzero
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from nationalethicscenter.org
+
+On Dec 1, 2012, we ran linkcheck on https://nationalethicscenter.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: nationalethicscenter.org_linkdata_1354701186.tgz
+Run Time: 1388 minutes + 3012 minutes = 4400 minutes
+Exit Status: successfully
+pages checked: 29294
+urls checked: 29327
+Unique 404 Error Urls: 33
+Total 404 Error: 8398
+linkcheck flags:
+notes: a lot of spammers on this site
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+
+
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from manufacturinghub.org
+
+On Dec 1, 2012, we ran linkcheck on https://manufacturinghub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: manufacturinghub.org_linkdata_1354893729.tgz
+Run Time: 112 minutes
+Exit Status: successfully
+pages checked: 1694
+urls checked: 1737
+Unique 404 Error Urls: 44
+Total 404 Error: 903
+linkcheck flags:
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from ccehub.org
+
+On Dec 9, 2012, we ran linkcheck on https://ccehub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: ccehub.org_linkdata_1355093664.tgz
+Run Time: 908 minutes
+Exit Status: stopped due to infinite loop of 500 pages
+pages checked: 9379
+urls checked: 16363
+Unique 404 Error Urls: 15
+Total 404 Error: 103
+linkcheck flags:
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from cleerhub.org
+
+On Dec 10, 2012, we ran linkcheck on https://cleerhub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: cleerhub.org_linkdata_1355185817.tgz
+Run Time: 164 minutes
+Exit Status: successfully
+pages checked: 2351
+urls checked: 2374
+Unique 404 Error Urls: 24
+Total 404 Error: 96
+linkcheck flags:
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from iemhub.org
+
+On Dec 10, 2012, we ran linkcheck on https://iemhub.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: iemhub.org_linkdata_1355244544.tgz
+Run Time: 85 minutes + 646 minutes = 731 minutes
+Exit Status: successfully
+pages checked: 9268
+urls checked: 9310
+Unique 404 Error Urls: 42
+Total 404 Error: 544
+linkcheck flags:
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from purr.purdue.edu
+
+On Dec 12, 2012, we ran linkcheck on https://purr.purdue.edu. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: purr.purdue.edu_linkdata_1355330384.tgz
+Run Time: 83 minutes
+Exit Status: successfully
+pages checked: 1341
+urls checked: 1353
+Unique 404 Error Urls: 13
+Total 404 Error: 1347
+linkcheck flags:
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from nees.org
+
+On March 30, 2013, we ran linkcheck on https://nees.org. linkcheck was run as a
+user not logged into the website from a hubzero.org workspace container. A
+summary of results follows:
+
+datafile: nees.org_linkdata_.tgz
+start time: 3:00pm saturday
+stop time: 8:35pm saturday
+start time: 11:30pm saturday
+stop time: 1:51am sunday
+start time: 9:45am
+stop time: 9:46pm
+start time: 10:28pm
+stop time:
+Run Time:  minutes
+Exit Status: successfully
+pages checked: 
+urls checked: 
+Unique 404 Error Urls: 
+Total 404 Error: 
+linkcheck flags: --ignore /warehouse  --ignore /data --locators nees
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from nanohub.org
+
+On May 24, 2013, we ran linkcheck on https://nanohub.org.
+linkcheck was run as a user not logged into the website
+from a hubzero.org workspace container.
+A summary of results follows:
+
+datafile: _linkdata_.tgz
+start time: 11:45am
+stop time:
+Run Time:  6.5 hours (6:30pm) + 3218 minutes (may 30, 5pm)
+Exit Status: successfully
+pages checked: 
+urls checked: 
+Unique 404 Error Urls: 
+Total 404 Error: 
+linkcheck flags:
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------
+
+
+linkcheck analysis from nees.org
+
+On May 26, 2013, we ran linkcheck on https://nees.org.
+linkcheck was run as a user not logged into the website
+from a hubzero.org workspace container.
+summary of results follows:
+
+datafile: nees.org_linkdata_.tgz
+Run Time: 214 minutes
+Exit Status: successfully
+pages checked: 
+urls checked: 
+Unique 404 Error Urls: 
+Total 404 Error: 
+linkcheck flags: --ignore /warehouse  --ignore /data --locators nees
+
+
+1. Phone number links
+2. Bread crumb links
+3. hard coded download links
+4. out of site referral links
+5. bad links on error pages
+6. bad links from website reorganization
+7. other bad links
+8. bad permalink - permalinks don't work, possibly due to website reorg
+9. bad wiki syntax - wiki syntax forcing bad links to be created
+10. bad rss feed links
+
+------------------------------------------------------------------

@@ -1,0 +1,137 @@
+%
+%  recommendations.tex  2007-02-06  Mark Senn  http://www.ecn.purdue.edu/~mark
+%
+
+% incorporate hubcheck into the development process. at the very least, when we
+% roll out a new feature or component on the hub, we should be asking "what is
+% the test plan". it also helps to have light documentation or requirements
+% describing how the component is supposed to work. these requirements are the
+% basis for hubcheck tests.
+%
+% selenium is not the only website checking software out there. other web
+% automation libraries can be used instead. the work done in hubcheck can be
+% used as a proof of concept and can possibly be applied to other software.
+%
+% with respect to building more page objects and testing more web components,
+% the hubzero team should probably make it a priority to focus on building
+% tests for one component at a time since resources seem to be streached and
+% the team has already published components that don't have an automated
+% testing plan.
+%
+% it would also help if the team had test environments where developers would
+% quickly build a clean version of the hub, running the recommended setup or a
+% clone of one of our existing hubs. the developer could then load their new
+% software on this test system and run hubcheck against the test system. the
+% hubcheck tests should include tests for their new feature so they can make
+% sure their code works, as well as tests from previously accepted components
+% to make sure the new feature works with the currently stable code.
+%
+% recommendations and future work for hubcheck.
+%
+% incorporate googletest or some other framework for testing Rappture's C/C++
+% code.
+%
+% currently hubcheck makes it very easy to use pre-installed page objects and
+% very hard to use page objects that are not a part of the standard
+% installation. this limits the user's ability to build and use page objects
+% for web pages other than the hub when using hubcheck. hubcheck libraries can
+% be used for websites that are not hubs. it should be easier for users to
+% build page objects that they store locally, outside of the standard
+% installation, and use with their own scripts.
+%
+% like to separate the hubcheck tests and hub page objects from the hubcheck
+% library.
+%
+% finish the hubcheck.bashshell module which builds upon the pexpect module, a
+% python implementation of Tcl's Expect. the hubcheck.bashshell module aims to
+% implement an interface similar to that of the hubcheck.sshshell module,
+% providing the usual send() and expect() methods, but also provides an
+% execute() method. the execute() method can run small scripts in the form of a
+% list of commands, checking the exit status of each command, and optionally
+% raising an exception if a command fails. this method reduces the usual cycle
+% of sending a command, expecting a result, sending another command to check
+% the exit status, and expecting the exit status, down to a single method call
+% with the command or list of commands that should be run.
+
+
+% future work
+% 1. hubcheck library improvements.
+%   0. **creating test accounts and storing passwords**
+%   a. additional modules (bashshell)
+%   b. organization (split library, pageobjects, tests)
+%   c. standard installation using system packages
+% 2. improving the testing environment.
+%   a. incorporate hubcheck earlier in the development cycle.
+%   b. encourage repeated automated testing. once it is setup, its easy to keep doing.
+% 3. evangelizing hubcheck to the hubzero team.
+%   a. show people how to use hubcheck during their own development.
+%   b. encourage people to write their own page objects and tests, and contribute them to the library.
+%   c. get people thinking about planning for automated testing while they develop.
+
+
+\chapter{FUTURE WORK}
+\label{chap:future}
+
+The future of HUBcheck is full of opportunities ranging from core library
+improvements, to the manifestation of robust test environments, to evangelizing
+HUBcheck to the HUBzero Team.
+
+\section{Library Improvements}
+\label{sec:future_library}
+
+The HUBcheck library's shell modules are based on the assumption that tests
+will be performed in a tool session container over SSH, but having access to a
+bash shell on the local machine could open up alternative ways of running
+testing currently unavailable to HUBcheck. With local shell access, HUBcheck
+could be installed on a hub and run as a user to perform tests without needing
+to navigate layers of authentication, reducing false positives stemming from
+expired passwords and revoked SSH access. The current bash shell module
+template, \xfmodule{hubcheck.bashshell}, builds upon the \xfmodule{pexpect}
+module, a Python implementation of Tcl's Expect. The
+\xfmodule{hubcheck.bashshell} module aims to implement an interface similar to
+that of the \xfmodule{hubcheck.sshshell} module, providing the usual
+\xfmethod{send()} and \xfmethod{expect()} methods, but also provides an
+\xfmethod{execute()} method described in
+\Cref{ssec:hubcheck_shell_modules_interacting_containers}.
+
+
+The organization of the HUBcheck library could also be improved. Currently, the
+core HUBcheck library, HUBzero specific page objects, and tests are all kept in
+the same repository and installed together. A better setup would be to install
+the core library and allow the HUBzero specific page objects to exist in a
+different location. This separation would also make it easier for users to
+build and use their own page objects while using the core HUBcheck library as
+a frame for developing automation scripts. The tests should be installed in a
+separate location, making them easy to update and add to without the need to
+reinstall the whole HUBcheck library.
+
+A reorganization of the HUBcheck library should be performed in coordination
+with a standardization of the HUBcheck install process. HUBcheck installations
+should try to use system libraries whenever possible instead of shipping with
+its own copies of libraries to reduce the propagation of security bugs.
+
+\section{Test Environments}
+\label{sec:future_testenv}
+
+HUBcheck is one piece of the larger testing puzzle that the HUBzero Team is
+trying to solve. The placement of HUBcheck in the development cycle is a bit
+off. Right now, it runs on live hubs managed by the HUBzero Team because other
+available systems that are used for testing fall short in possessing the
+properties of a true testing environment that (1) represents a production
+environment, (2) is easily reproducible, and (3) is reliably available.
+Developers need a test environment they can quickly launch with a production
+compatible hub installation, update with a new feature being developed, and run
+HUBcheck tests. This falls in line with the goals of the HUBcheck project of
+lowering the barriers to adopting better testing practices earlier in the
+development cycle.
+
+\section{Adoption Within the HUBzero Team}
+\label{sec:future_adoption}
+
+Another missing piece to the HUBcheck project is an educational component.
+Using and setting up HUBcheck to run is undocumented for the most part. Future
+work will include evangelizing for HUBcheck, and better testing practices in
+general. HUBcheck is not the correct tool for all problems, but fits a unique
+niche within the hub environment that discouraged testing in the past and left
+hubs in a precarious state. The HUBcheck project helps promote one of the core
+phases in the software development process.

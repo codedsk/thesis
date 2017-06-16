@@ -1,0 +1,1934 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="iframewrap_stages.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path4005"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path4008"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4002"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4008-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5091"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5093"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5095"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5097"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5095-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5097-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5713"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5715"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4008-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5719"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5721"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5723"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5725"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5723-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5725-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6871"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6873"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6875"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6877"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5723-25"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5725-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6871-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6873-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6875-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6877-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5723-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5725-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6985"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6987"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6989"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6991"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6989-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6991-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6989-66"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6991-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7781"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7783"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7785"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7787"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6989-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6991-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7781-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7783-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7785-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7787-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7785-1-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7787-0-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7785-1-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7787-0-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7785-1-7-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7787-0-9-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7785-1-7-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7787-0-9-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7785-1-7-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7787-0-9-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5095-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5097-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11206"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11208"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.77109375"
+     inkscape:cx="57.586966"
+     inkscape:cy="-665.97195"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-global="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1518"
+     inkscape:window-height="896"
+     inkscape:window-x="25"
+     inkscape:window-y="53"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36383724;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987"
+       width="182.07487"
+       height="200.2309"
+       x="-618.31805"
+       y="242.04411"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-578"
+       y="282.36218"
+       id="text3757"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759"
+         x="-578"
+         y="282.36218">Text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-578"
+       y="340.36218"
+       id="text3761"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763"
+         x="-578"
+         y="340.36218">value</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-578"
+       y="398.36218"
+       id="text3765"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3767"
+         x="-578"
+         y="398.36218">append()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -598,302.36218 140,0 0,0"
+       id="path3769"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -597.82278,363.23589 139.99999,0 0,0"
+       id="path3769-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36383724;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8"
+       width="182.07487"
+       height="200.2309"
+       x="-346.31805"
+       y="180.04411"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-306"
+       y="220.36218"
+       id="text3757-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2"
+         x="-306"
+         y="220.36218">property</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-306"
+       y="278.36218"
+       id="text3761-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6"
+         x="-306"
+         y="278.36218">__get__()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -326,240.36218 140,0 0,0"
+       id="path3769-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-306"
+       y="310.36218"
+       id="text3761-9-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-3"
+         x="-306"
+         y="310.36218">__set__()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-326"
+       y="340.36218"
+       id="text3761-9-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-1"
+         x="-326"
+         y="340.36218">__delete__()</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7"
+       width="182.67027"
+       height="63.359219"
+       x="-346.61575"
+       y="421.7464"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-306"
+       y="462.36218"
+       id="text3757-1-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4"
+         x="-306"
+         y="462.36218">function</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -480,332.36218 c 120,-60 120,-60 120,-60"
+       id="path3993"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -460,392.36218 c 100,60 100,60 100,60"
+       id="path4625"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-00"
+       width="182.38144"
+       height="120.13219"
+       x="-346.47131"
+       y="531.89081"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-286"
+       y="572.36218"
+       id="text3757-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-9"
+         x="-286"
+         y="572.36218">text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-316"
+       y="630.36218"
+       id="text3761-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-8"
+         x="-316"
+         y="630.36218">__class__</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -326,592.36218 140,0 0,0"
+       id="path3769-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="M -332.19979,618.11578 C -479.97369,472.2543 -479.97369,472.2543 -479.97369,472.2543"
+       id="path4893"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36383724;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-2"
+       width="182.07487"
+       height="200.2309"
+       x="-620.31805"
+       y="854.04413"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-580"
+       y="894.36218"
+       id="text3757-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-6"
+         x="-580"
+         y="894.36218">Text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-580"
+       y="952.36218"
+       id="text3761-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-57"
+         x="-580"
+         y="952.36218">value</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-580"
+       y="1010.3622"
+       id="text3765-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3767-3"
+         x="-580"
+         y="1010.3622">append()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -600,914.3622 140,0 0,0"
+       id="path3769-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -599.82278,975.2359 139.99999,0 0,0"
+       id="path3769-1-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36383724;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-3"
+       width="182.07487"
+       height="200.2309"
+       x="-348.31805"
+       y="792.04413"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="832.36218"
+       id="text3757-1-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-5"
+         x="-308"
+         y="832.36218">property</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="890.36218"
+       id="text3761-9-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-4"
+         x="-308"
+         y="890.36218">__get__()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -328,852.36218 140,0 0,0"
+       id="path3769-4-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="922.36218"
+       id="text3761-9-3-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-3-6"
+         x="-308"
+         y="922.36218">__set__()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-328"
+       y="952.36218"
+       id="text3761-9-5-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-1-7"
+         x="-328"
+         y="952.36218">__delete__()</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-6"
+       width="182.67027"
+       height="63.359219"
+       x="-348.61575"
+       y="1033.7463"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="1074.3622"
+       id="text3757-1-0-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-8"
+         x="-308"
+         y="1074.3622">function</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -482,944.3622 c 120,-60.00002 120,-60.00002 120,-60.00002"
+       id="path3993-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -462,1004.3622 c 100,60 100,60 100,60"
+       id="path4625-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-00-6"
+       width="181.88901"
+       height="187.07643"
+       x="-348.2251"
+       y="1144.1371"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-288"
+       y="1184.3622"
+       id="text3757-3-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-9-7"
+         x="-288"
+         y="1184.3622">text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-318"
+       y="1242.3622"
+       id="text3761-7-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-8-8"
+         x="-318"
+         y="1242.3622">__class__</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -328,1204.3622 140,0 0,0"
+       id="path3769-3-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -334.19979,1230.1158 c -147.7739,-145.8615 -147.7739,-145.8615 -147.7739,-145.8615"
+       id="path4893-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -328,1266.3622 140,0 0,0"
+       id="path3769-3-5-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-314"
+       y="1306.3622"
+       id="text3765-9-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3767-3-6"
+         x="-314"
+         y="1306.3622">append()</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36383724;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-2-9"
+       width="182.07487"
+       height="200.2309"
+       x="-620.31805"
+       y="1514.0442"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-580"
+       y="1554.3622"
+       id="text3757-8-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-6-5"
+         x="-580"
+         y="1554.3622">Text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-580"
+       y="1612.3622"
+       id="text3761-0-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-57-6"
+         x="-580"
+         y="1612.3622">value</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-580"
+       y="1670.3622"
+       id="text3765-9-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3767-3-62"
+         x="-580"
+         y="1670.3622">append()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -600,1574.3622 140,0 0,0"
+       id="path3769-9-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -599.82278,1635.2359 139.99999,0 0,0"
+       id="path3769-1-9-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36383724;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-3-8"
+       width="182.07487"
+       height="200.2309"
+       x="-348.31805"
+       y="1452.0442"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="1492.3622"
+       id="text3757-1-3-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-5-8"
+         x="-308"
+         y="1492.3622">property</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="1550.3622"
+       id="text3761-9-9-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-4-5"
+         x="-308"
+         y="1550.3622">__get__()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -328,1512.3622 140,0 0,0"
+       id="path3769-4-9-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="1582.3622"
+       id="text3761-9-3-7-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-3-6-0"
+         x="-308"
+         y="1582.3622">__set__()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-328"
+       y="1612.3622"
+       id="text3761-9-5-9-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-1-7-2"
+         x="-328"
+         y="1612.3622">__delete__()</tspan></text>
+    <rect
+       style="fill:none;stroke:#fc0000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-6-2"
+       width="182.67027"
+       height="63.359219"
+       x="-348.61575"
+       y="1693.7463"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-308"
+       y="1734.3622"
+       id="text3757-1-0-2-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-8-6"
+         x="-308"
+         y="1734.3622">function</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -482,1604.3622 c 120,-60 120,-60 120,-60"
+       id="path3993-4-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -462,1664.3622 c 100,60 100,60 100,60"
+       id="path4625-2-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-00-6-6"
+       width="181.88901"
+       height="187.07643"
+       x="-348.2251"
+       y="1804.1371"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-288"
+       y="1844.3622"
+       id="text3757-3-4-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-9-7-6"
+         x="-288"
+         y="1844.3622">text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-318"
+       y="1902.3622"
+       id="text3761-7-0-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-8-8-4"
+         x="-318"
+         y="1902.3622">__class__</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -328,1864.3622 140,0 0,0"
+       id="path3769-3-5-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -328,1926.3622 140,0 0,0"
+       id="path3769-3-5-8-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-314"
+       y="1966.3622"
+       id="text3765-9-1-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3767-3-6-4"
+         x="-314"
+         y="1966.3622">append()</tspan></text>
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:1.36383724000000006;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-0-9"
+       width="182.07487"
+       height="200.2309"
+       x="-1.1083254"
+       y="1693.0106"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="39.209728"
+       y="1733.3287"
+       id="text3757-0-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-0-7"
+         x="39.209728"
+         y="1733.3287">tmp_Text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="39.209728"
+       y="1791.3287"
+       id="text3761-3-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-5-6"
+         x="39.209728"
+         y="1791.3287">value</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="39.209728"
+       y="1849.3287"
+       id="text3765-4-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3767-4-0"
+         x="39.209728"
+         y="1849.3287">append()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 19.20973,1753.3288 140.00001,0 0,0"
+       id="path3769-7-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 19.38695,1814.2025 139.99999,0 0,0"
+       id="path3769-1-0-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:1.36383724000000006;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect2987-8-3-8-1"
+       width="182.07487"
+       height="200.2309"
+       x="271.68195"
+       y="1452.0442"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="312"
+       y="1492.3622"
+       id="text3757-1-3-7-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-5-8-6"
+         x="312"
+         y="1492.3622">property</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="312"
+       y="1550.3622"
+       id="text3761-9-9-4-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-4-5-8"
+         x="312"
+         y="1550.3622">__get__()</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 292,1512.3622 140,0 0,0"
+       id="path3769-4-9-8-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="312"
+       y="1582.3622"
+       id="text3761-9-3-7-0-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-3-6-0-9"
+         x="312"
+         y="1582.3622">__set__()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="292"
+       y="1612.3622"
+       id="text3761-9-5-9-4-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3763-6-1-7-2-4"
+         x="292"
+         y="1612.3622">__delete__()</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.53025401;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-2"
+       width="81.364395"
+       height="37.271172"
+       x="-78.657852"
+       y="236.7357"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-66"
+       y="262.36218"
+       id="text3757-1-0-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-5"
+         x="-66"
+         y="262.36218">fget</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36606634;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-4"
+       width="82.810249"
+       height="29.639013"
+       x="-80.029213"
+       y="284.55182"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-66"
+       y="306.36218"
+       id="text3757-1-0-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-50"
+         x="-66"
+         y="306.36218">fset</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.45048082;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-8"
+       width="81.430168"
+       height="33.446358"
+       x="-79.987579"
+       y="324.70282"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-66"
+       y="350.36218"
+       id="text3757-1-0-61"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-2"
+         x="-66"
+         y="350.36218">fdel</tspan></text>
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-6-6-9-9"
+       width="127.8914"
+       height="30.626963"
+       x="47.312687"
+       y="1514.0031"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="56.000031"
+       y="1534.3622"
+       id="text3757-1-0-2-0-6-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-8-9-0-5"
+         x="56.000031"
+         y="1534.3622">_wrapper</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -181.56028,302.77758 c 94.670716,0 94.670716,0 94.670716,0"
+       id="path7305"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -180.26342,335.19906 c 92.076997,0 92.076997,0 92.076997,0"
+       id="path7525"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -180.14615,262.88701 c 94.670718,0 94.670718,0 94.670718,0"
+       id="path7305-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.53025401;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-2-9"
+       width="81.364395"
+       height="37.271172"
+       x="-77.362785"
+       y="850.83246"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-64.704933"
+       y="876.45892"
+       id="text3757-1-0-6-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-5-5"
+         x="-64.704933"
+         y="876.45892">fget</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.36606634;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-4-4"
+       width="82.810249"
+       height="29.639013"
+       x="-78.734146"
+       y="898.64856"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-64.704933"
+       y="920.45892"
+       id="text3757-1-0-3-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-50-6"
+         x="-64.704933"
+         y="920.45892">fset</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.45048082;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-8-2"
+       width="81.430168"
+       height="33.446358"
+       x="-78.692513"
+       y="938.79962"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-64.704933"
+       y="964.45892"
+       id="text3757-1-0-61-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-2-9"
+         x="-64.704933"
+         y="964.45892">fdel</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -180.26521,916.87431 c 94.670711,0 94.670711,0 94.670711,0"
+       id="path7305-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -178.96835,949.2958 c 92.076992,0 92.076992,0 92.076992,0"
+       id="path7525-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -178.85108,876.98374 c 94.670713,0 94.670713,0 94.670713,0"
+       id="path7305-8-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:1.53025400999999994;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-2-0"
+       width="81.364395"
+       height="37.271172"
+       x="-76.878494"
+       y="1509.9813"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-64.220642"
+       y="1535.6078"
+       id="text3757-1-0-6-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-5-8"
+         x="-64.220642"
+         y="1535.6078">fget</tspan></text>
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:1.36606633999999993;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-4-1"
+       width="82.810249"
+       height="29.639013"
+       x="-78.249847"
+       y="1557.7975"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-64.220642"
+       y="1579.6078"
+       id="text3757-1-0-3-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-50-8"
+         x="-64.220642"
+         y="1579.6078">fset</tspan></text>
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:1.45048081999999967;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-8-8"
+       width="81.430168"
+       height="33.446358"
+       x="-78.208221"
+       y="1597.9485"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-64.220642"
+       y="1623.6078"
+       id="text3757-1-0-61-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-2-0"
+         x="-64.220642"
+         y="1623.6078">fdel</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -179.78092,1576.0232 c 94.670717,0 94.670717,0 94.670717,0"
+       id="path7305-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -178.48406,1608.4447 c 92.076998,0 92.076998,0 92.076998,0"
+       id="path7525-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker6989)"
+       d="m -178.36679,1536.1327 c 94.670719,0 94.670719,0 94.670719,0"
+       id="path7305-8-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-6-6-9-9-7"
+       width="127.8914"
+       height="30.626963"
+       x="47.381554"
+       y="1557.4803"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="56.068893"
+       y="1577.8395"
+       id="text3757-1-0-2-0-6-0-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-8-9-0-5-6"
+         x="56.068893"
+         y="1577.8395">_wrapper</tspan></text>
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-6-6-9-9-2"
+       width="127.8914"
+       height="30.626963"
+       x="47.209312"
+       y="1597.8694"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="55.896656"
+       y="1618.2285"
+       id="text3757-1-0-2-0-6-0-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-8-9-0-5-60"
+         x="55.896656"
+         y="1618.2285">_wrapper</tspan></text>
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:1.79999994999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker7785-1)"
+       d="m 41.499493,1534.2001 c -29.827761,0 -29.827761,0 -29.827761,0"
+       id="path7928"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:1.79999994999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker7785-1)"
+       d="m 41.526064,1574.2001 c -29.827761,0 -29.827761,0 -29.827761,0"
+       id="path7928-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:1.79999994999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker7785-1)"
+       d="m 41.526064,1610.2001 c -29.827761,0 -29.827761,0 -29.827761,0"
+       id="path7928-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Mstart);marker-start:none"
+       d="m 295.68389,1536.0907 c -110.23303,0 -110.23303,0 -110.23303,0 l 0,0"
+       id="path8197"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mstart)"
+       d="m 294.89488,1577.3875 c -110.23303,0 -110.23303,0 -110.23303,0 l 0,0"
+       id="path8197-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mstart)"
+       d="m 293.00431,1609.1991 c -110.23303,0 -110.23303,0 -110.23303,0 l 0,0"
+       id="path8197-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-6-6-9-9-2-8"
+       width="127.8914"
+       height="30.626963"
+       x="-558.04901"
+       y="1867.0385"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-549.36169"
+       y="1887.3976"
+       id="text3757-1-0-2-0-6-0-1-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-8-9-0-5-60-9"
+         x="-549.36169"
+         y="1887.3976">_wrapper</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker5095)"
+       d="m -192.26899,1309.6249 c 92.14976,-56.2148 92.14976,-56.2148 92.14976,-56.2148"
+       id="path5317-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#marker5095)"
+       d="M -85.989086,1205.5562 -162.80257,1104.2737"
+       id="path5509-8-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987-8-7-6-6-9-9-2-8-9"
+       width="127.8914"
+       height="30.626963"
+       x="-142.64127"
+       y="1214.213"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-133.95393"
+       y="1234.5721"
+       id="text3757-1-0-2-0-6-0-1-4-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3759-2-4-8-9-0-5-60-9-2"
+         x="-133.95393"
+         y="1234.5721">_wrapper</tspan></text>
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker11206)"
+       d="m -326.80851,1962.7573 c -147.84194,-57.0618 -147.84194,-57.0618 -147.84194,-57.0618"
+       id="path12559"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker11206);opacity:1"
+       d="m -479.83789,1848.6337 c 121.90476,-97.2644 121.90476,-97.2644 121.90476,-97.2644"
+       id="path13057"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker11206)"
+       d="M 25.937183,1843.4463 C -158.21682,1739.6975 -158.21682,1739.6975 -158.21682,1739.6975"
+       id="path13557"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker11206)"
+       d="m -200,1892.3622 180,0"
+       id="path13809"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff0000;stroke:#fc0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker11206)"
+       d="M 136.17021,1785.0876 C 324.21479,1663.1829 324.21479,1663.1829 324.21479,1663.1829"
+       id="path14059"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/derrick/gradschool/thesis/images/iframewrap_stage_3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+  </g>
+</svg>
